@@ -199,6 +199,8 @@ return [
             'updated_at_helper' => ' ',
             'deleted_at'        => 'Deleted at',
             'deleted_at_helper' => ' ',
+            'reason'            => 'Reason',
+            'reason_helper'     => ' ',
         ],
     ],
     'candidate' => [
@@ -237,6 +239,8 @@ return [
             'updated_at_helper'     => ' ',
             'deleted_at'            => 'Deleted at',
             'deleted_at_helper'     => ' ',
+            'dp'                    => 'Dp',
+            'dp_helper'             => ' ',
         ],
     ],
     'query' => [
@@ -311,6 +315,24 @@ return [
             'marks_helper'             => ' ',
             'evaluation_test'          => 'Evaluation Test',
             'evaluation_test_helper'   => ' ',
+        ],
+    ],
+    'setting' => [
+        'title'          => 'Setting',
+        'title_singular' => 'Setting',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => ' ',
+            'field'             => 'Field',
+            'field_helper'      => ' ',
+            'value'             => 'Value',
+            'value_helper'      => ' ',
+            'created_at'        => 'Created at',
+            'created_at_helper' => ' ',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => ' ',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => ' ',
         ],
     ],
 ];

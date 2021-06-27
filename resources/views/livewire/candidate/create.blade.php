@@ -1,5 +1,15 @@
 <form wire:submit.prevent="submit" class="pt-3">
 
+    <div class="form-group {{ $errors->has('mediaCollections.candidate_dp') ? 'invalid' : '' }}">
+        <label class="form-label" for="dp">{{ trans('cruds.candidate.fields.dp') }}</label>
+        <x-dropzone id="dp" name="dp" action="{{ route('admin.candidates.storeMedia') }}" collection-name="candidate_dp" max-file-size="4" max-width="2048" max-height="2048" max-files="1" />
+        <div class="validation-message">
+            {{ $errors->first('mediaCollections.candidate_dp') }}
+        </div>
+        <div class="help-block">
+            {{ trans('cruds.candidate.fields.dp_helper') }}
+        </div>
+    </div>
     <div class="form-group {{ $errors->has('candidate.name') ? 'invalid' : '' }}">
         <label class="form-label" for="name">{{ trans('cruds.candidate.fields.name') }}</label>
         <input class="form-control" type="text" name="name" id="name" wire:model.defer="candidate.name">

@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SessionDurationController;
 use App\Http\Controllers\Admin\SessionStartDateController;
 use App\Http\Controllers\Admin\SessionTimeController;
+use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakingController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -56,6 +57,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
     Route::resource('answers', AnswerController::class, ['except' => ['store', 'update', 'destroy']]);
 
     // Candidate
+    Route::post('candidates/media', [CandidateController::class, 'storeMedia'])->name('candidates.storeMedia');
     Route::resource('candidates', CandidateController::class, ['except' => ['store', 'update', 'destroy']]);
 
     // Bill
@@ -67,4 +69,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
 
     // Speaking
     Route::resource('speakings', SpeakingController::class, ['except' => ['store', 'update', 'destroy']]);
+
+    // Setting
+    Route::resource('settings', SettingController::class, ['except' => ['store', 'update', 'destroy']]);
 });

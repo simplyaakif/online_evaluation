@@ -8,12 +8,16 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class Candidate extends Model
+class Candidate extends Model implements HasMedia
 {
     use HasFactory;
     use HasAdvancedFilter;
     use SoftDeletes;
+    use InteractsWithMedia;
 
     public const GENDER_RADIO = [
         'male'   => 'Male',
@@ -54,6 +58,10 @@ class Candidate extends Model
         'nationality',
     ];
 
+    protected $appends = [
+        'dp',
+    ];
+
     protected $dates = [
         'dob',
         'created_at',
@@ -75,6 +83,36 @@ class Candidate extends Model
         'country',
         'nationality',
     ];
+
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $thumbnailWidth  = 50;
+        $thumbnailHeight = 50;
+
+        $thumbnailPreviewWidth  = 120;
+        $thumbnailPreviewHeight = 120;
+
+        $this->addMediaConversion('thumbnail')
+            ->width($thumbnailWidth)
+            ->height($thumbnailHeight)
+            ->fit('crop', $thumbnailWidth, $thumbnailHeight);
+        $this->addMediaConversion('preview_thumbnail')
+            ->width($thumbnailPreviewWidth)
+            ->height($thumbnailPreviewHeight)
+            ->fit('crop', $thumbnailPreviewWidth, $thumbnailPreviewHeight);
+    }
+
+    public function getDpAttribute()
+    {
+        return $this->getMedia('candidate_dp')->map(function ($item) {
+            $media = $item->toArray();
+            $media['url'] = $item->getUrl();
+            $media['thumbnail'] = $item->getUrl('thumbnail');
+            $media['preview_thumbnail'] = $item->getUrl('preview_thumbnail');
+
+            return $media;
+        });
+    }
 
     public function userAccount()
     {

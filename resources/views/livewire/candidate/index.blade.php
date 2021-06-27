@@ -38,6 +38,9 @@
                             @include('components.table.sort', ['field' => 'id'])
                         </th>
                         <th>
+                            {{ trans('cruds.candidate.fields.dp') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.candidate.fields.name') }}
                             @include('components.table.sort', ['field' => 'name'])
                         </th>
@@ -97,6 +100,13 @@
                             </td>
                             <td>
                                 {{ $candidate->id }}
+                            </td>
+                            <td>
+                                @foreach($candidate->dp as $key => $entry)
+                                    <a class="link-photo" href="{{ $entry['url'] }}">
+                                        <img src="{{ $entry['thumbnail'] }}" alt="{{ $entry['name'] }}" title="{{ $entry['name'] }}">
+                                    </a>
+                                @endforeach
                             </td>
                             <td>
                                 {{ $candidate->name }}

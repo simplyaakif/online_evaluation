@@ -27,6 +27,18 @@
                         </tr>
                         <tr>
                             <th>
+                                {{ trans('cruds.candidate.fields.dp') }}
+                            </th>
+                            <td>
+                                @foreach($candidate->dp as $key => $entry)
+                                    <a class="link-photo" href="{{ $entry['url'] }}">
+                                        <img src="{{ $entry['preview_thumbnail'] }}" alt="{{ $entry['name'] }}" title="{{ $entry['name'] }}">
+                                    </a>
+                                @endforeach
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
                                 {{ trans('cruds.candidate.fields.name') }}
                             </th>
                             <td>
