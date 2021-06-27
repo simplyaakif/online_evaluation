@@ -8,31 +8,29 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Answer extends Model
+class Setting extends Model
 {
     use HasFactory;
     use HasAdvancedFilter;
     use SoftDeletes;
 
-    public $table = 'answers';
-
-    public $filterable = [
-        'id',
-        'title',
-        'reason',
-        'question.question',
-    ];
+    public $table = 'settings';
 
     public $orderable = [
         'id',
-        'title',
-        'correct',
-        'reason',
-        'question.question',
+        'field',
+        'value',
     ];
 
-    protected $casts = [
-        'correct' => 'boolean',
+    public $filterable = [
+        'id',
+        'field',
+        'value',
+    ];
+
+    protected $fillable = [
+        'field',
+        'value',
     ];
 
     protected $dates = [
@@ -40,18 +38,6 @@ class Answer extends Model
         'updated_at',
         'deleted_at',
     ];
-
-    protected $fillable = [
-        'title',
-        'correct',
-        'reason',
-        'question_id',
-    ];
-
-    public function question()
-    {
-        return $this->belongsTo(Question::class);
-    }
 
     protected function serializeDate(DateTimeInterface $date)
     {

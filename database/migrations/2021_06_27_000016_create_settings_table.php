@@ -4,15 +4,14 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAnswersTable extends Migration
+class CreateSettingsTable extends Migration
 {
     public function up()
     {
-        Schema::create('answers', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->longText('title')->nullable();
-            $table->boolean('correct')->default(0)->nullable();
-            $table->longText('reason')->nullable();
+            $table->string('field')->nullable();
+            $table->string('value')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

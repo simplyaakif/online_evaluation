@@ -43,6 +43,14 @@
                         </tr>
                         <tr>
                             <th>
+                                {{ trans('cruds.answer.fields.reason') }}
+                            </th>
+                            <td>
+                                {{ $answer->reason }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
                                 {{ trans('cruds.answer.fields.question') }}
                             </th>
                             <td>

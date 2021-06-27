@@ -217,6 +217,15 @@
                         </ul>
                     </li>
                 @endcan
+                @can('setting_access')
+                    <li class="items-center">
+                        <a class="{{ request()->is("admin/settings*") ? "sidebar-nav-active" : "sidebar-nav" }}" href="{{ route("admin.settings.index") }}">
+                            <i class="fa-fw c-sidebar-nav-icon fas fa-cogs">
+                            </i>
+                            {{ trans('cruds.setting.title') }}
+                        </a>
+                    </li>
+                @endcan
 
                 @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
                     @can('profile_password_edit')

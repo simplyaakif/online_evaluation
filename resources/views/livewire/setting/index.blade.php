@@ -8,7 +8,7 @@
                 @endforeach
             </select>
 
-            @can('answer_delete')
+            @can('setting_delete')
                 <button class="btn btn-rose ml-3 disabled:opacity-50 disabled:cursor-not-allowed" type="button" wire:click="confirm('deleteSelected')" wire:loading.attr="disabled" {{ $this->selectedCount ? '' : 'disabled' }}>
                     {{ __('Delete Selected') }}
                 </button>
@@ -34,66 +34,50 @@
                         <th class="w-9">
                         </th>
                         <th class="w-28">
-                            {{ trans('cruds.answer.fields.id') }}
+                            {{ trans('cruds.setting.fields.id') }}
                             @include('components.table.sort', ['field' => 'id'])
                         </th>
                         <th>
-                            {{ trans('cruds.answer.fields.title') }}
-                            @include('components.table.sort', ['field' => 'title'])
+                            {{ trans('cruds.setting.fields.field') }}
+                            @include('components.table.sort', ['field' => 'field'])
                         </th>
                         <th>
-                            {{ trans('cruds.answer.fields.correct') }}
-                            @include('components.table.sort', ['field' => 'correct'])
-                        </th>
-                        <th>
-                            {{ trans('cruds.answer.fields.reason') }}
-                            @include('components.table.sort', ['field' => 'reason'])
-                        </th>
-                        <th>
-                            {{ trans('cruds.answer.fields.question') }}
-                            @include('components.table.sort', ['field' => 'question.question'])
+                            {{ trans('cruds.setting.fields.value') }}
+                            @include('components.table.sort', ['field' => 'value'])
                         </th>
                         <th>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse($answers as $answer)
+                    @forelse($settings as $setting)
                         <tr>
                             <td>
-                                <input type="checkbox" value="{{ $answer->id }}" wire:model="selected">
+                                <input type="checkbox" value="{{ $setting->id }}" wire:model="selected">
                             </td>
                             <td>
-                                {{ $answer->id }}
+                                {{ $setting->id }}
                             </td>
                             <td>
-                                {{ $answer->title }}
+                                {{ $setting->field }}
                             </td>
                             <td>
-                                <input class="disabled:opacity-50 disabled:cursor-not-allowed" type="checkbox" disabled {{ $answer->correct ? 'checked' : '' }}>
-                            </td>
-                            <td>
-                                {{ $answer->reason }}
-                            </td>
-                            <td>
-                                @if($answer->question)
-                                    <span class="badge badge-relationship">{{ $answer->question->question ?? '' }}</span>
-                                @endif
+                                {{ $setting->value }}
                             </td>
                             <td>
                                 <div class="flex justify-end">
-                                    @can('answer_show')
-                                        <a class="btn btn-sm btn-info mr-2" href="{{ route('admin.answers.show', $answer) }}">
+                                    @can('setting_show')
+                                        <a class="btn btn-sm btn-info mr-2" href="{{ route('admin.settings.show', $setting) }}">
                                             {{ trans('global.view') }}
                                         </a>
                                     @endcan
-                                    @can('answer_edit')
-                                        <a class="btn btn-sm btn-success mr-2" href="{{ route('admin.answers.edit', $answer) }}">
+                                    @can('setting_edit')
+                                        <a class="btn btn-sm btn-success mr-2" href="{{ route('admin.settings.edit', $setting) }}">
                                             {{ trans('global.edit') }}
                                         </a>
                                     @endcan
-                                    @can('answer_delete')
-                                        <button class="btn btn-sm btn-rose mr-2" type="button" wire:click="confirm('delete', {{ $answer->id }})" wire:loading.attr="disabled">
+                                    @can('setting_delete')
+                                        <button class="btn btn-sm btn-rose mr-2" type="button" wire:click="confirm('delete', {{ $setting->id }})" wire:loading.attr="disabled">
                                             {{ trans('global.delete') }}
                                         </button>
                                     @endcan
@@ -120,7 +104,7 @@
                     {{ __('Entries selected') }}
                 </p>
             @endif
-            {{ $answers->links() }}
+            {{ $settings->links() }}
         </div>
     </div>
 </div>
