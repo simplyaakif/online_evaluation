@@ -42,6 +42,10 @@ class Create extends Component
             'answer.correct' => [
                 'boolean',
             ],
+            'answer.reason' => [
+                'string',
+                'nullable',
+            ],
             'answer.question_id' => [
                 'integer',
                 'exists:questions,id',

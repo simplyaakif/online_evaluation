@@ -20,6 +20,16 @@
             {{ trans('cruds.answer.fields.correct_helper') }}
         </div>
     </div>
+    <div class="form-group {{ $errors->has('answer.reason') ? 'invalid' : '' }}">
+        <label class="form-label" for="reason">{{ trans('cruds.answer.fields.reason') }}</label>
+        <textarea class="form-control" name="reason" id="reason" wire:model.defer="answer.reason" rows="4"></textarea>
+        <div class="validation-message">
+            {{ $errors->first('answer.reason') }}
+        </div>
+        <div class="help-block">
+            {{ trans('cruds.answer.fields.reason_helper') }}
+        </div>
+    </div>
     <div class="form-group {{ $errors->has('answer.question_id') ? 'invalid' : '' }}">
         <label class="form-label" for="question">{{ trans('cruds.answer.fields.question') }}</label>
         <x-select-list class="form-control" id="question" name="question" :options="$this->listsForFields['question']" wire:model="answer.question_id" />

@@ -310,6 +310,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 75,
                 'title' => 'speaking_access',
             ],
+            [
+                'id'    => 76,
+                'title' => 'setting_create',
+            ],
+            [
+                'id'    => 77,
+                'title' => 'setting_edit',
+            ],
+            [
+                'id'    => 78,
+                'title' => 'setting_show',
+            ],
+            [
+                'id'    => 79,
+                'title' => 'setting_delete',
+            ],
+            [
+                'id'    => 80,
+                'title' => 'setting_access',
+            ],
         ];
 
         Permission::insert($permissions);
