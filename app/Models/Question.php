@@ -51,4 +51,9 @@ class Question extends Model
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    public function answers()
+    {
+        return $this->hasMany(Answer::class);
+    }
 }

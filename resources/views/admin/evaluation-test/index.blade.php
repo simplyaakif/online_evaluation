@@ -8,7 +8,6 @@
                     {{ trans('cruds.evaluationTest.title_singular') }}
                     {{ trans('global.list') }}
                 </h6>
-
                 @can('evaluation_test_create')
                     <a class="btn btn-indigo" href="{{ route('admin.evaluation-tests.create') }}">
                         {{ trans('global.add') }} {{ trans('cruds.evaluationTest.title_singular') }}

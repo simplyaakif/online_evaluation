@@ -16,12 +16,29 @@ use App\Http\Controllers\Admin\SessionTimeController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakingController;
 use App\Http\Controllers\Admin\UserController;
+
+use App\Http\Controllers\CandidateController as CController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::redirect('/', '/login');
 
-Auth::routes(['register' => false]);
+Route::redirect('/', '/candidate/home');
+
+Auth::routes();
+
+
+Route::group(['prefix' => 'candidate'],function (){
+   Route::get('home',[CController::class,'index'])->name('candidate.home');
+   Route::get('dashboard',[CController::class,'dashboard'])->name('candidate.dashboard');
+   Route::get('course',[CController::class,'course'])->name('candidate.course');
+   Route::get('personal',[CController::class,'personal'])->name('candidate.personal');
+   Route::get('evaluation',[CController::class,'evaluation'])->name('candidate.evaluation');
+   Route::get('register',[CController::class,'register'])->name('candidate.register');
+   Route::get('summary',[CController::class,'summary'])->name('candidate.summary');
+   Route::get('invoice',[CController::class,'invoice'])->name('candidate.invoice');
+});
+
+
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
