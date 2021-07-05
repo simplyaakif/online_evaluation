@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="laravelTinkerProject">
+    <option name="lastCode" value="&lt;?php&#10;//Tinker away!&#10;    use App\Models\Course;&#10;&#10;    $course = Course::with('sessionDuration')-&gt;findOrFail(2);&#10;    &#10;    $course-&gt;sessionDuration;&#10;    &#10;    " />
+  </component>
+</project>

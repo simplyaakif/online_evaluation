@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap" rel="stylesheet">
     @livewireStyles
+    @livewireScripts
     <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
     <title>{{$title}}</title>
 </head>
@@ -28,7 +29,6 @@
         <x-layouts.footer/>
     </div>
 @endif
-@livewireScripts
 <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

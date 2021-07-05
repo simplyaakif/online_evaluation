@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-white border-b border-t border-gray-200 flex" aria-label="Breadcrumb">
+<nav class="bg-white hidden md:block border-b border-t border-gray-200 flex" aria-label="Breadcrumb">
     <ol class="max-w-screen-xl w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8">
         <li class="flex">
             <div class="flex items-center">

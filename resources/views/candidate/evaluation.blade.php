@@ -5,18 +5,7 @@
     02"/>
     <x-candidate.steps/>
     <x-candidate.evaluation-countdown/>
-    <script>
-        window.addEventListener('beforeunload', (event) => {
-            event.returnValue = `Are you sure you want to leave?`;
-        });
-        // let formChanged = false;
-        // myForm.addEventListener('change', () => formChanged = true);
-        // window.addEventListener('beforeunload', (event) => {
-        //     if (formChanged) {
-        //         event.returnValue = 'You have unfinished changes!';
-        //     }
-        // });
-    </script>
+
     <div class="max-w-6xl mx-auto mt-10">
 
         <div>
@@ -211,4 +200,35 @@
         </div>
 
     </div>
+
+    <x-slot name="scripts">
+        <script>
+            var seconds = 60;
+            var timer;
+
+            function myFunction() {
+                if (seconds < 60) { // I want it to say 1:00, not 60
+                    console.log(seconds)
+                }
+                if (seconds > 0) { // so it doesn't go to -1
+                    seconds--;
+                } else {
+                    clearInterval(timer);
+                    alert("You type X WPM");
+                }
+            }
+
+            function startEvaluation() {
+                // document.addEventListener('livewire:load', function () {
+                //     $wire.set('modal', false)
+                document.getElementById('modalid').style.display = 'none';
+                    if (!timer) {
+                        timer = window.setInterval(function () {
+                            myFunction();
+                        }, 1000); // every second
+                    }
+                // })
+            }
+        </script>
+    </x-slot>
 </x-layouts.main>
