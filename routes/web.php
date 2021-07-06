@@ -22,25 +22,25 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-Route::redirect('/', '/candidate/home');
 
 Auth::routes();
 
 
-Route::group(['prefix' => 'candidate'],function (){
-   Route::get('home',[CController::class,'index'])->name('candidate.home');
+Route::get('/',[CController::class,'index'])->name('home');
+Route::get('/candidate/register',[CController::class,'register'])->name('candidate.register');
+
+Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
    Route::get('dashboard',[CController::class,'dashboard'])->name('candidate.dashboard');
    Route::get('course',[CController::class,'course'])->name('candidate.course');
    Route::get('personal',[CController::class,'personal'])->name('candidate.personal');
    Route::get('evaluation',[CController::class,'evaluation'])->name('candidate.evaluation');
-   Route::get('register',[CController::class,'register'])->name('candidate.register');
    Route::get('summary',[CController::class,'summary'])->name('candidate.summary');
    Route::get('invoice',[CController::class,'invoice'])->name('candidate.invoice');
 });
 
 
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth','is_admin']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     // Permissions

@@ -44,6 +44,11 @@ class Course extends Model
         return $this->belongsToMany(SessionDuration::class)->withPivot('price');
     }
 
+    public function sessionDuration()
+    {
+        return $this->belongsToMany(SessionDuration::class)->withPivot('price');
+    }
+
     public function sessionTime()
     {
         return $this->belongsToMany(SessionTime::class);

@@ -66,6 +66,7 @@
             return 'https://avatars.dicebear.com/api/initials/' . $this->name . '.svg';
         }
 
+
         public function getIsAdminAttribute()
         {
             return $this->roles()->where('title', 'Admin')->exists();

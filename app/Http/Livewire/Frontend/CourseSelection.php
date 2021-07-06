@@ -20,7 +20,7 @@
         public  $course_time;
         public  $course_duration;
 
-        public $currentCourse;
+        public $currentCourse,$currentDuration;
 
         public $testVariable;
 
@@ -63,11 +63,11 @@
         public function updatingCourseDuration($value)
         {
 //dd($value);
-//            $session_duration = SessionDuration::findOrFail($value);
+            $session_duration = SessionDuration::findOrFail($value);
+            $this->currentDuration =$session_duration;
             $course = Course::with('sessionDurations')->findOrFail($this->currentCourse->id);
-
 //            $this->course_duration=$session_duration->id;
-            $session_duration=$course->sessionDurations()->where('session_duration_id', $value)->first();;
+            $session_duration=$course->sessionDurations()->where('session_duration_id', $value)->first();
             $this->final['course']=$this->currentCourse;
             $this->final['course_duration']=$session_duration;
 
@@ -76,10 +76,25 @@
 //            $this->final['session_date']=$this->session_dates->first();
 
         }
+        public function updatingCourseTime($value){
+            $this->finalUpdate();
+            $time = SessionTime::findOrFail($value)->first();
+            $this->final['session_time']=$time;
+        }
 
-        public function finalUpdate($time,$date)
+        public function updatingSessionDate($value){
+            $this->finalUpdate();
+            $date = SessionStartDate::findOrFail($value)->first();
+            $this->final['session_date']=$date;
+        }
+
+        public function finalUpdate()
         {
-
+            $course = Course::with('sessionDurations')->findOrFail($this->currentCourse->id);
+            $session_duration=$course->sessionDurations()->where('session_duration_id', $this->currentDuration->id)
+                ->first();
+            $this->final['course']=$this->currentCourse;
+            $this->final['course_duration']=$session_duration;
         }
 
 

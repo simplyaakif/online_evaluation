@@ -91,7 +91,11 @@
                     <div class="px-4 py-3 sm:p-6">
                         <h2 class="text-sm">Course Name</h2>
                         <h3 class="text-3xl font-semibold text-indigo-600">
-                            {{$final['course']->title}}
+                            @isset($final['course']->title)
+                                {{$final['course']->title}}
+                            @else
+                                {{$final['course']['title']}}
+                            @endisset
                         </h3>
                     </div>
                     {{--            <hr>--}}
@@ -108,7 +112,11 @@
                         <div>
                             <h2 class="text-sm">Course Duration</h2>
                             <h3 class="text-base  text-gray-600">
-                                {{$final['course_duration']->session_duration}}
+                                @isset($final['course_duration']->session_duration)
+                                    {{$final['course_duration']->session_duration}}
+                                @else
+                                    {{$final['course_duration']['session_duration']}}
+                                @endisset
                             </h3>
                         </div>
                         <div>
