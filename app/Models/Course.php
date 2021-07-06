@@ -39,7 +39,7 @@ class Course extends Model
         'deleted_at',
     ];
 
-    public function sessionDuration()
+    public function sessionDurations()
     {
         return $this->belongsToMany(SessionDuration::class)->withPivot('price');
     }

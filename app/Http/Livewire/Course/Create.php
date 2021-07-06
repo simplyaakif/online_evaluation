@@ -36,7 +36,7 @@ class Create extends Component
         $this->validate();
 
         $this->course->save();
-        $this->course->sessionDuration()->sync($this->session_duration);
+        $this->course->sessionDurations()->sync($this->session_duration);
         $this->course->sessionTime()->sync($this->session_time);
         $this->course->sessionStartDate()->sync($this->session_start_date);
 

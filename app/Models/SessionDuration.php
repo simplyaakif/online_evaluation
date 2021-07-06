@@ -36,6 +36,11 @@ class SessionDuration extends Model
         'deleted_at',
     ];
 
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class)->withPivot('price');
+    }
+
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');

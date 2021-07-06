@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="laravelTinkerProject">
-    <option name="lastCode" value="&lt;?php&#10;//Tinker away!&#10;    use App\Models\Course;&#10;&#10;    $course = Course::with('sessionDuration')-&gt;findOrFail(2);&#10;    &#10;    $course-&gt;sessionDuration;&#10;    &#10;    " />
+    <option name="lastCode" value="&lt;?php&#10;//Tinker away!&#10;    use App\Models\Course;&#10;    use App\Models\SessionDuration;&#10;&#10;    $course = Course::with('sessionDurations')-&gt;findOrFail(2);&#10;//    &#10;    $course-&gt;sessionDurations()-&gt;where('session_duration_id', 1)-&gt;first();&#10;    &#10;//    $session_duration = SessionDuration::findOrFail(1);&#10;//    $session_duration-&gt;courses()-&gt;where('course_id',2)-&gt;first();&#10;    " />
   </component>
 </project>

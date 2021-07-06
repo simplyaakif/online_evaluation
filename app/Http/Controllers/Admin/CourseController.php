@@ -35,7 +35,7 @@ class CourseController extends Controller
     {
         abort_if(Gate::denies('course_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $course->load('sessionDuration', 'sessionTime', 'sessionStartDate');
+        $course->load('sessionDurations', 'sessionTime', 'sessionStartDate');
 
         return view('admin.course.show', compact('course'));
     }

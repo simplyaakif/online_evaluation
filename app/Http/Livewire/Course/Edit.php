@@ -23,7 +23,7 @@ class Edit extends Component
     public function mount(Course $course)
     {
         $this->course             = $course;
-        $this->session_duration   = $this->course->sessionDuration()->pluck('id')->toArray();
+        $this->session_duration   = $this->course->sessionDurations()->pluck('id')->toArray();
         $this->session_time       = $this->course->sessionTime()->pluck('id')->toArray();
         $this->session_start_date = $this->course->sessionStartDate()->pluck('id')->toArray();
         $this->initListsForFields();
@@ -39,7 +39,7 @@ class Edit extends Component
         $this->validate();
 
         $this->course->save();
-        $this->course->sessionDuration()->sync($this->session_duration);
+        $this->course->sessionDurations()->sync($this->session_duration);
         $this->course->sessionTime()->sync($this->session_time);
         $this->course->sessionStartDate()->sync($this->session_start_date);
 

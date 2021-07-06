@@ -4,6 +4,8 @@
 
     use App\Models\Course;
     use App\Models\SessionDuration;
+    use App\Models\SessionStartDate;
+    use App\Models\SessionTime;
     use Livewire\Component;
 
     class CourseSelection extends Component {
@@ -13,20 +15,23 @@
         public $course_times;
         public $course_durations;
 
-        public $course;
-        public $session_date;
-        public $course_time;
-        public $course_duration;
+        public  $course;
+        public  $session_date;
+        public  $course_time;
+        public  $course_duration;
 
         public $currentCourse;
 
         public $testVariable;
 
-        /**
-         * Get the view / contents that represent the component.
-         *
-         * @return \Illuminate\View\View|string
-         */
+        public $final = [
+            'course'=>'',
+            'course_duration'=>'',
+            'session_date'=>'',
+            'session_time'=>''
+        ];
+
+
         public function mount()
         {
             $this->courses         = Course::all();
@@ -36,18 +41,46 @@
         }
 
         public function updatedCourse($value){
-            $selectedCourse = Course::with('sessionDuration')->findOrFail($value);
+            $simpleCourse = Course::find($value);
+            $selectedCourse = Course::with('sessionDurations')->findOrFail($value);
             $this->currentCourse = $selectedCourse;
             $this->session_dates = $selectedCourse->sessionStartDate;
-            $this->course_durations = $selectedCourse->sessionDuration;
+            $this->course_durations = $selectedCourse->sessionDurations;
             $this->course_times = $selectedCourse->sessionTime;
             $this->testVariable = $selectedCourse;
 //            $this->course_durations = S
             $this->course_duration = $this->course_durations->first()->id;
             $this->session_date = $this->session_dates->first()->id;
             $this->course_time = $this->course_times->first()->id;
+
+
+            $this->final['course']=$simpleCourse;
+            $this->final['course_duration']=$this->course_durations->first();
+            $this->final['session_date']=$this->session_dates->first();
+            $this->final['session_time']=$this->course_times->first();
         }
 
+        public function updatingCourseDuration($value)
+        {
+//dd($value);
+//            $session_duration = SessionDuration::findOrFail($value);
+            $course = Course::with('sessionDurations')->findOrFail($this->currentCourse->id);
+
+//            $this->course_duration=$session_duration->id;
+            $session_duration=$course->sessionDurations()->where('session_duration_id', $value)->first();;
+            $this->final['course']=$this->currentCourse;
+            $this->final['course_duration']=$session_duration;
+
+//            dd($this->final['session_time']);
+//            $this->final['session_time']=$this->course_times->first();
+//            $this->final['session_date']=$this->session_dates->first();
+
+        }
+
+        public function finalUpdate($time,$date)
+        {
+
+        }
 
 
         public function render()

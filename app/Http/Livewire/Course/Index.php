@@ -69,7 +69,7 @@ class Index extends Component
 
     public function render()
     {
-        $query = Course::with(['sessionDuration', 'sessionTime', 'sessionStartDate'])->advancedFilter([
+        $query = Course::with(['sessionDurations', 'sessionTime', 'sessionStartDate'])->advancedFilter([
             's'               => $this->search ?: null,
             'order_column'    => $this->sortBy,
             'order_direction' => $this->sortDirection,
