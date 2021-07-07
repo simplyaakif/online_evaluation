@@ -1,5 +1,5 @@
 <div>
-{{--    <code class="text-sm">{{json_encode($final['session_time'])}}</code>--}}
+{{--    <code class="text-sm">{{json_encode($final['session_date'])}}</code>--}}
     <div class="grid grid-cols-1 mx-auto md:grid-cols-6 gap-4 auto-cols-min">
         <div class="bg-white md:col-span-4 overflow-hidden shadow rounded-lg">
             <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
@@ -63,11 +63,11 @@
                     <div>
                         <label for="learning_mode" class="block text-sm font-medium text-gray-700">Mode of
                             Learning</label>
-                        <select id="learning_mode" name="learning_mode"
+                        <select wire:model="final.mode" id="learning_mode" name="learning_mode"
                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                            <option>Regular On Campus</option>
-                            <option selected>Online</option>
-                            <option>Weekend Session</option>
+                            <option value="Regular On Campus">Regular On Campus</option>
+                            <option selected value="Online">Online</option>
+                            <option value="Weekend Session">Weekend Session</option>
                             {{--            <option>Recorded Session</option>--}}
                         </select>
                     </div>
@@ -139,6 +139,10 @@
                                 @endisset
                             </h3>
                         </div>
+                    </div>
+                    <div class="px-4 text-sm py-2 bg-gray-50">
+                        <span class="text-sm text-gray-600">Mode of Learning:</span>
+                        <span class="font-semibold">{{$final['mode']}}</span>
                     </div>
                 </div>
             </div>
