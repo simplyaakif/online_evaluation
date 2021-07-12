@@ -39,7 +39,7 @@
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
             <p class="text-center text-base text-gray-400">
-                &copy; 2020 Workflow, Inc. All rights reserved.
+                &copy; 2016 - {{Carbon\Carbon::now()->year}} ACE American Center of English, Inc. All rights reserved.
             </p>
         </div>
     </div>

@@ -8,7 +8,7 @@
                 </h3>
             </div>
             <div class="px-4 py-5 sm:p-6">
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {{--    {{$testVariable}}--}}
                     <div>
                         <label for="course" class="block text-sm font-medium text-gray-700">Select Course</label>
@@ -75,19 +75,30 @@
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-4 sm:px-6 flex justify-end">
-                <a href="{{route('candidate.evaluation')}}" class="inline-flex items-center px-4 py-2 border
-                border-transparent
-                text-sm
-                font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <button wire:click="submit"  class="inline-flex items-center px-4 py-2 border
+                border-transparent                text-sm                font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <div wire:loading wire:target="submit" class="mr-2 ">
+                        <div class="la-ball-clip-rotate la-sm">
+                            <div></div>
+                        </div>
+                    </div>
                     Next
-                </a>
+                </button>
             </div>
         </div>
         <!-- This example requires Tailwind CSS v2.0+ -->
         {{--    <div class="w-full">--}}
         @if($course_duration)
             <div class="w-full mx-auto bg-white md:col-span-2 overflow-hidden self-start shadow rounded-lg">
-                <div class="divide-gray-200 divide-y ">
+                <div wire:loading.flex  >
+                    <div class="bg-white h-56 w-full flex items-center justify-center">
+                        <div class="la-square-jelly-box la-dark">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div wire:loading.remove class="divide-gray-200 divide-y ">
                     <div class="px-4 py-3 sm:p-6">
                         <h2 class="text-sm">Course Name</h2>
                         <h3 class="text-3xl font-semibold text-indigo-600">
@@ -150,3 +161,4 @@
         {{--    </div>--}}
     </div>
 </div>
+

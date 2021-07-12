@@ -27,6 +27,9 @@ Auth::routes();
 
 
 Route::get('/',[CController::class,'index'])->name('home');
+Route::get('/',function (){
+    return redirect()->route('candidate.dashboard');
+})->middleware('auth')->name('home');
 Route::get('/candidate/register',[CController::class,'register'])->name('candidate.register');
 
 Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
@@ -34,8 +37,10 @@ Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
    Route::get('course',[CController::class,'course'])->name('candidate.course');
    Route::get('personal',[CController::class,'personal'])->name('candidate.personal');
    Route::get('evaluation',[CController::class,'evaluation'])->name('candidate.evaluation');
+   Route::get('evaluations',[CController::class,'evaluation'])->name('candidate.evaluations');
    Route::get('summary',[CController::class,'summary'])->name('candidate.summary');
    Route::get('invoice',[CController::class,'invoice'])->name('candidate.invoice');
+   Route::get('invoices',[CController::class,'invoice'])->name('candidate.invoices');
 });
 
 

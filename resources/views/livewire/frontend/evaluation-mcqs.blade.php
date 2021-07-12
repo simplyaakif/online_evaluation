@@ -20,7 +20,7 @@
             </div>
         </div>
         <!-- This example requires Tailwind CSS v2.0+ -->
-        <div x-data="{show:true}">
+        <div x-data="{show:false}">
             <div x-show="show" id="modalid" class="fixed z-10 inset-0 overflow-y-auto"
                  aria-labelledby="modal-title"
                  role="dialog"

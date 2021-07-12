@@ -35,7 +35,7 @@
         </div>
         <div>
             <label for="password" class="block text-sm font-medium text-gray-700">
-                Confirm        Password
+                Confirm Password
             </label>
             <div class="mt-1">
                 <input wire:model="password_confirmation" id="password" name="password" type="password"
@@ -59,7 +59,14 @@
 
         <div>
             <button type="submit"
-                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    class="w-full relative flex items-center justify-center py-2 px-4 border border-transparent rounded-md
+                    shadow-sm
+                    text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <div wire:loading class="mr-2 ">
+                    <div class="la-ball-clip-rotate la-sm">
+                        <div></div>
+                    </div>
+                </div>
                 Sign Up
             </button>
         </div>

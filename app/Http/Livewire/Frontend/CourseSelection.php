@@ -2,10 +2,12 @@
 
     namespace App\Http\Livewire\Frontend;
 
+    use App\Models\CandidateCourse;
     use App\Models\Course;
     use App\Models\SessionDuration;
     use App\Models\SessionStartDate;
     use App\Models\SessionTime;
+    use Illuminate\Support\Facades\Auth;
     use Livewire\Component;
 
     class CourseSelection extends Component {
@@ -21,7 +23,7 @@
         public $course_time;
         public $course_duration;
 
-        public $currentCourse=null, $currentDuration=null;
+        public $currentCourse = null, $currentDuration = null;
 
         public $testVariable;
 
@@ -97,7 +99,7 @@
 
         public function hydrate()
         {
-            if($this->currentDuration!=null && $this->currentCourse!=null) {
+            if($this->currentDuration != null && $this->currentCourse != null) {
                 $this->finalUpdate();
             }
 
@@ -110,6 +112,21 @@
                                             = $course->sessionDurations()->where('session_duration_id', $this->currentDuration->id)->first();
             $this->final['course']          = $this->currentCourse;
             $this->final['course_duration'] = $session_duration;
+        }
+
+        public function submit()
+        {
+            $candidateCourse = CandidateCourse::create([
+                'course_name' => $this->final['course']['title'],
+                'course_duration' => $this->final['course_duration']['session_duration'],
+                'course_time' => $this->final['session_time']['time'],
+                'course_start_date' => $this->final['session_date']['start_date'],
+                'course_mode' => $this->final['mode'],
+                'course_price' => $this->final['course_duration']['pivot']['price'],
+                'user_id' => Auth::user()->id,
+                                                       ]);
+            $this->redirectRoute('candidate.evaluation');
+
         }
 
 

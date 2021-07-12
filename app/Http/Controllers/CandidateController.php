@@ -2,6 +2,9 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\CandidateCourse;
+    use Illuminate\Support\Facades\Auth;
+
     class CandidateController extends Controller {
 
         public function index()
@@ -14,7 +17,8 @@
         }
         public function dashboard()
         {
-            return view('candidate.dashboard');
+            $courses = CandidateCourse::where('user_id',Auth::id())->get();
+            return view('candidate.dashboard',compact('courses'));
         }
         public function personal()
         {

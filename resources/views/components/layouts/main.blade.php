@@ -16,6 +16,7 @@
     @livewireStyles
     @livewireScripts
     <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/animation.css')}}">
     <title>{{$title}}</title>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col justify-between">

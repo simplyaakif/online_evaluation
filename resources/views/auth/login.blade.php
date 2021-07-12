@@ -91,7 +91,7 @@
 @endif
 @if(Route::has('register'))
                                             <div class="w-1/2 text-right">
-                                                <a href="{{ route('register') }}" class="">
+                                                <a href="{{ route('candidate.register') }}" class="">
                                                     <small>
                                                         Create new account
                                                     </small>
