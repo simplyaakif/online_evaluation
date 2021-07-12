@@ -27,9 +27,7 @@ Auth::routes();
 
 
 Route::get('/',[CController::class,'index'])->name('home');
-Route::get('/',function (){
-    return redirect()->route('candidate.dashboard');
-})->middleware('auth')->name('home');
+
 Route::get('/candidate/register',[CController::class,'register'])->name('candidate.register');
 
 Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
