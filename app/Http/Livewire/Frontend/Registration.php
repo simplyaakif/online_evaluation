@@ -2,13 +2,14 @@
 
     namespace App\Http\Livewire\Frontend;
 
+    use App\Models\Candidate;
     use App\Models\User;
     use Auth;
     use Livewire\Component;
 
     class Registration extends Component {
 
-        public $name,$email, $password, $password_confirmation;
+        public $name, $email, $password, $password_confirmation;
 
         protected $rules
             = [
@@ -26,18 +27,20 @@
         {
             $this->validate();
 
-            $user = User::create([
-                             'name'     => $this->name,
-                             'email'    => $this->email,
-                             'password' => $this->password
-                         ]);
+            $user      = User::create([
+                                          'name'     => $this->name,
+                                          'email'    => $this->email,
+                                          'password' => $this->password
+                                      ]);
+            $candidate = Candidate::create([
+                                               'name'            => $this->name,
+                                               'user_account_id' => $user->id
+                                           ]);
             $user->roles()->sync([2]);
             Auth::login($user);
-            $this->name=$this->email=$this->password=$this->password_confirmation='';
+            $this->name = $this->email = $this->password = $this->password_confirmation = '';
 
             return redirect()->route('candidate.dashboard');
-
-
 
         }
 

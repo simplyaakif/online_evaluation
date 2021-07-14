@@ -13,7 +13,7 @@
     use Illuminate\Foundation\Auth\User as Authenticatable;
     use Illuminate\Notifications\Notifiable;
 
-    class User extends Authenticatable {
+    class User extends Authenticatable implements MustVerifyEmail {
 
         use HasFactory;
         use HasAdvancedFilter;
@@ -64,6 +64,11 @@
         {
 
             return 'https://avatars.dicebear.com/api/initials/' . $this->name . '.svg';
+        }
+
+        public function candidate()
+        {
+            return $this->belongsTo(Candidate::class,'user_account_id');
         }
 
 

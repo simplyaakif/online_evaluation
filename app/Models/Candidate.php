@@ -84,6 +84,9 @@ class Candidate extends Model implements HasMedia
         'nationality',
     ];
 
+    public function evaluations()
+    {
+    }
     public function registerMediaConversions(Media $media = null): void
     {
         $thumbnailWidth  = 50;

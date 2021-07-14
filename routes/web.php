@@ -18,7 +18,8 @@ use App\Http\Controllers\Admin\SpeakingController;
 use App\Http\Controllers\Admin\UserController;
 
 use App\Http\Controllers\CandidateController as CController;
-use Illuminate\Support\Facades\Auth;
+    use Illuminate\Foundation\Auth\EmailVerificationRequest;
+    use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
@@ -35,11 +36,23 @@ Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
    Route::get('course',[CController::class,'course'])->name('candidate.course');
    Route::get('personal',[CController::class,'personal'])->name('candidate.personal');
    Route::get('evaluation',[CController::class,'evaluation'])->name('candidate.evaluation');
-   Route::get('evaluations',[CController::class,'evaluation'])->name('candidate.evaluations');
+   Route::get('evaluations',[CController::class,'evaluations'])->name('candidate.evaluations');
    Route::get('summary',[CController::class,'summary'])->name('candidate.summary');
    Route::get('invoice',[CController::class,'invoice'])->name('candidate.invoice');
    Route::get('invoices',[CController::class,'invoice'])->name('candidate.invoices');
+
+
+   Route::get('evaluation/{id}',[CController::class,'evaluationSingle'])->name('candidate.evaluation_single');
 });
+
+    Route::get('/email/verify', function () {
+        return view('auth.verify-email');
+    })->middleware('auth')->name('verification.notice');
+
+    Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+        $request->fulfill();
+        return redirect('/');
+    })->middleware(['auth', 'signed'])->name('verification.verify');
 
 
 
