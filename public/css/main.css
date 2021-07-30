@@ -846,6 +846,10 @@ select {
 	margin-top: -0.5rem;
 	margin-bottom: -0.5rem;
 }
+.mx-2 {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
 .mr-2 {
 	margin-right: 0.5rem;
 }
@@ -1946,10 +1950,6 @@ select {
 
 	.md\:w-auto {
 		width: auto;
-	}
-
-	.md\:grid-cols-4 {
-		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 
 	.md\:grid-cols-3 {

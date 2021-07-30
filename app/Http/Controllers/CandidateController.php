@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\Bill;
     use App\Models\Candidate;
     use App\Models\CandidateCourse;
     use App\Models\CandidateEvaluation;
@@ -68,6 +69,14 @@
                 return $course->invoice == null;
             });
             return view('candidate.invoice',compact('courses','candidate'));
+        }
+
+        public function invoices()
+        {
+            $candidate = Candidate::where('user_account_id',Auth::id())->first();
+            $bills = Bill::where('candidate_id', Auth::user()->candidate['id'])->get();
+//            dd($bills);
+            return view('candidate.invoices',compact('bills','candidate'));
         }
 
         public function summary()

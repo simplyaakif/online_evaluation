@@ -39,7 +39,7 @@ Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
    Route::get('evaluations',[CController::class,'evaluations'])->name('candidate.evaluations');
    Route::get('summary',[CController::class,'summary'])->name('candidate.summary');
    Route::get('invoice',[CController::class,'invoice'])->name('candidate.invoice');
-   Route::get('invoices',[CController::class,'invoice'])->name('candidate.invoices');
+   Route::get('invoices',[CController::class,'invoices'])->name('candidate.invoices');
 
 
    Route::get('evaluation/{id}',[CController::class,'evaluationSingle'])->name('candidate.evaluation_single');

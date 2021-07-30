@@ -15,13 +15,19 @@
         public $course;
         public $invoicegenerated = false;
 
+        public function mount()
+        {
+            if($this->course->invoice) {
+                $this->invoicegenerated = true;
+            }
+        }
+
         public function generateInvoice($course)
         {
 
             $course = CandidateCourse::findOrFail($course);
-            $curl = curl_init();
-
-            $json = [
+            $curl   = curl_init();
+            $json   = [
                 0 => [
                     'MerchantId'       => 'Ace_Institute',
                     'MerchantPassword' => 'Demo@ace21',
@@ -65,12 +71,16 @@
             curl_close($curl);
 //            dd($finalResponse);
             if($finalResponse[0]->Status == 00) {
+//                dd($finalResponse[1]->Click2Pay);
                 Bill::create([
-                                 'candidate_id'        => Auth::user()->candidate['id'],
+                                 'pay_link'            => $finalResponse[1]->Click2Pay,
+                                 'bill_url'            => $finalResponse[1]->BillUrl,
+                                 'pay_id'              => $finalResponse[1]->ConnectPayId,
                                  'amount'              => $finalResponse[1]->OrderAmount,
+                                 'candidate_id'        => Auth::user()->candidate['id'],
                                  'status'              => "UNPAID",
                                  'due_date'            => today()->addDays(3)->format('d-m-Y'),
-                                 'course_id'           => '',
+                                 'course_id'           => '0',
                                  'candidate_course_id' => $course->id,
                              ]);
             }

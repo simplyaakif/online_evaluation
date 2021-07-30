@@ -143,7 +143,7 @@
             </div>
         </div>
         <div class="text-right">
-            <a class="bg-indigo-600 px-4 py-2 mt-10 inline-block text-right text-white rounded-md" href="{{route('candidate.invoices')
+            <a class="bg-indigo-600 px-4 py-2 mt-10 inline-block text-right text-white rounded-md" href="{{route('candidate.invoice')
             }}">
                 Generate Invoices
             </a>

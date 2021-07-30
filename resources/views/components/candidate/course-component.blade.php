@@ -14,7 +14,7 @@
     </div>
     <div wire:loading.remove class="divide-gray-200 divide-y ">
         <div class="px-4 py-3 sm:p-6">
-            <h2 class="text-sm">Course Name {{$course->id}}</h2>
+            <h2 class="text-sm">Course Name </h2>
             <h3 class="text-3xl font-semibold text-indigo-600">
                 {{$course->course_name}}
             </h3>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="block bg-indigo-600 text-white text-center ">
-            @if(!$invoicegenerated)
+            @if(!$invoicegenerated || !$course->invoice)
                 <button wire:click="generateInvoice({{ $course->id }})" class="py-3">
                     <div wire:loading wire:target="submit" class="mr-2 ">
                         <div class="la-ball-clip-rotate la-sm">

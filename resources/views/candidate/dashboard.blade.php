@@ -29,24 +29,27 @@
     @else
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div>
-                <ul class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     @foreach($courses as $course)
-                        <li class="bg-white  rounded-md">
-                            <h2 class="text-xl px-4 py-2 font-medium">
-                            {{$course->course_name}}
-                            </h2>
-                            <hr>
-                            <div class="grid px-4 py-2 grid-cols-1 text-xs">
-                                <div class="grid-cols-2 grid">
-                                    <span>Duration:</span>
-                                    <span>{{$course->course_duration}}</span>
-                                </div>
-                                <div class="grid-cols-2 grid">
-                                    <span>Time:</span>
-                                    <span>{{$course->course_time}}</span>
-                                </div>
-                            </div>
+                        <li>
+                            <livewire:course-invoice :course="$course"/>
                         </li>
+{{--                        <li class="bg-white  rounded-md">--}}
+{{--                            <h2 class="text-xl px-4 py-2 font-medium">--}}
+{{--                            {{$course->course_name}}--}}
+{{--                            </h2>--}}
+{{--                            <hr>--}}
+{{--                            <div class="grid px-4 py-2 grid-cols-1 text-xs">--}}
+{{--                                <div class="grid-cols-2 grid">--}}
+{{--                                    <span>Duration:</span>--}}
+{{--                                    <span>{{$course->course_duration}}</span>--}}
+{{--                                </div>--}}
+{{--                                <div class="grid-cols-2 grid">--}}
+{{--                                    <span>Time:</span>--}}
+{{--                                    <span>{{$course->course_time}}</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
                     @endforeach
                 </ul>
             </div>

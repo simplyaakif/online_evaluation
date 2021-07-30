@@ -15,6 +15,7 @@ class Bill extends Model
     use HasAdvancedFilter;
     use SoftDeletes;
 
+    public $guarded =[];
     public const STATUS_SELECT = [
         'unpaid'  => 'Un-Paid',
         'paid'    => 'Paid',
@@ -41,14 +42,14 @@ class Bill extends Model
         'paid_on',
     ];
 
-    protected $fillable = [
-        'candidate_id',
-        'amount',
-        'due_date',
-        'status',
-        'paid_on',
-        'candidate_course_id'
-    ];
+//    protected $fillable = [
+//        'candidate_id',
+//        'amount',
+//        'due_date',
+//        'status',
+//        'paid_on',
+//        'candidate_course_id'
+//    ];
 
     protected $dates = [
         'due_date',
