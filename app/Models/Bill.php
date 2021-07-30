@@ -47,6 +47,7 @@ class Bill extends Model
         'due_date',
         'status',
         'paid_on',
+        'candidate_course_id'
     ];
 
     protected $dates = [

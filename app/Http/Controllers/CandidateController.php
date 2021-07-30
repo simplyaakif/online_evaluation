@@ -63,7 +63,10 @@
         public function invoice()
         {
             $candidate = Candidate::where('user_account_id',Auth::id())->first();
-            $courses = CandidateCourse::where('user_id', Auth::id())->get();
+            $coursesBill = CandidateCourse::where('user_id', Auth::id())->with('invoice')->get();
+            $courses = $coursesBill->filter(function ($course){
+                return $course->invoice == null;
+            });
             return view('candidate.invoice',compact('courses','candidate'));
         }
 

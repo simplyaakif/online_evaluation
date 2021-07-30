@@ -2,38 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/CandidateEvaluation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_12_195722_create_candidate_evaluations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_13_201954_add_course_id_to_bills.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/candidate/evaluation_single.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/candidate/evaluations.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/evaluation-listening.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/evaluation-mcq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/course-invoice.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/EvaluationMcqs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bill.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/CandidateCourse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CandidateCourse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/evaluation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/evaluation-view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/candidate/invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/invoice.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/personal-information.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/personal-information.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/evaluation-countdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/evaluation-countdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/evaluation-mcqs.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +139,6 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
-      <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/bugsnag/bugsnag-psr-logger" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -189,6 +174,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-web-tinker" />
       <path value="$PROJECT_DIR$/vendor/khsing/world" />
+      <path value="$PROJECT_DIR$/vendor/lifetimesms/gateway" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
     </include_path>
   </component>
   <component name="ProjectId" id="1uX0S8ZS2SrBdObrpsqUdFLiQaO" />
@@ -213,7 +201,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -261,7 +249,16 @@
       <workItem from="1626086841310" duration="626000" />
       <workItem from="1626090321526" duration="13059000" />
       <workItem from="1626171240320" duration="14774000" />
-      <workItem from="1626244540497" duration="15100000" />
+      <workItem from="1626244540497" duration="15918000" />
+      <workItem from="1626428420484" duration="3755000" />
+      <workItem from="1626448555991" duration="3870000" />
+      <workItem from="1626506226035" duration="3000" />
+      <workItem from="1626506505444" duration="2483000" />
+      <workItem from="1626520651822" duration="6607000" />
+      <workItem from="1626535296742" duration="21000" />
+      <workItem from="1627396988104" duration="1752000" />
+      <workItem from="1627399850438" duration="3931000" />
+      <workItem from="1627639693806" duration="1187000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -319,7 +316,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626092338058</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Code 75 Done">
+      <created>1626277687427</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626277687427</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Code 75 Done">
+      <created>1626277721903</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626277721903</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +346,8 @@
     <MESSAGE value="Course Select Done" />
     <MESSAGE value="Code 65" />
     <MESSAGE value="Code 66" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code 66" />
+    <MESSAGE value="Code 75 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code 75 Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="317" y="20" key="#CLI_Interpreters" timestamp="1625395477499">
@@ -358,14 +370,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="79" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1624802083191" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625552067413">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1626525171823">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1625552067413" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1626092336232">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1626525171823" />
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1626277719271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1626092336232" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1626277719271" />
     <state x="549" y="259" key="Create Blade Component" timestamp="1626276546966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -382,10 +394,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="557" y="228" key="Create Database Migration/0.0.1366.728@0.0.1366.728" timestamp="1626189594400" />
-    <state x="557" y="274" key="Create Livewire Component" timestamp="1626184728787">
+    <state x="557" y="274" key="Create Livewire Component" timestamp="1626522576903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="557" y="274" key="Create Livewire Component/0.0.1366.728@0.0.1366.728" timestamp="1626184728787" />
+    <state x="557" y="274" key="Create Livewire Component/0.0.1366.728@0.0.1366.728" timestamp="1626522576903" />
+    <state x="557" y="233" key="Create Mailable" timestamp="1626436836813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="557" y="233" key="Create Mailable/0.0.1366.728@0.0.1366.728" timestamp="1626436836813" />
     <state x="526" y="259" key="Create Middleware" timestamp="1625553974238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -410,10 +426,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="189" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799381406" />
-    <state x="238" y="10" key="SettingsEditor" timestamp="1626184664951">
+    <state x="238" y="10" key="SettingsEditor" timestamp="1626520527460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1626184664951" />
+    <state x="238" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1626520527460" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1626276488814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -422,10 +438,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="199" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799347383" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1626092343249">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1626277739546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1626092343249" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1626277739546" />
     <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1625562734700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -454,10 +470,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1626189215106" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1626276633645">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1626526769747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1626276633645" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1626526769747" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

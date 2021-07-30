@@ -12,4 +12,5 @@
         {
             return $this->hasOne(Bill::class,'candidate_course_id');
         }
+
     }

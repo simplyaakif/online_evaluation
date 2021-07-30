@@ -142,15 +142,13 @@
                 </dl>
             </div>
         </div>
-    </div>
-    @if(count($courses)!=0)
-        <div class="max-w-6xl mx-auto mt-10">
-            <div class="grid grid-cols-6">
-                @foreach($courses as $course)
-                    <x-candidate.course-component :course="$course"/>
-                @endforeach
-            </div>
+        <div class="text-right">
+            <a class="bg-indigo-600 px-4 py-2 mt-10 inline-block text-right text-white rounded-md" href="{{route('candidate.invoices')
+            }}">
+                Generate Invoices
+            </a>
         </div>
-    @endif
+    </div>
+
 
 </x-layouts.main>

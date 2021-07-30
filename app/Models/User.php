@@ -68,7 +68,7 @@
 
         public function candidate()
         {
-            return $this->belongsTo(Candidate::class,'user_account_id');
+            return $this->hasOne(Candidate::class,'user_account_id');
         }
 
 
