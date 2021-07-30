@@ -17,11 +17,21 @@
 
         public function mount()
         {
-            $this->name = Auth::user()->name;
-            $this->email = Auth::user()->email;
             $this->countries= Country::orderBy('name','asc')->get();
             $this->callingcodes= Country::orderBy('callingcode','asc')->get();
             $this->cities = City::where('country_id',70)->get();
+
+            $this->name = Auth::user()->name;
+            $this->email = Auth::user()->email;
+            $this->mobile= Auth::user()->candidate['mobile'];
+            $this->cnic= Auth::user()->candidate['cnic'];
+            $this->lang= Auth::user()->candidate['first_language'];
+            $this->profession= Auth::user()->candidate['profession'];
+            $this->address= Auth::user()->candidate['address'];
+            $this->city= Auth::user()->candidate['city'];
+            $this->country= Auth::user()->candidate['country'];
+
+
         }
 
         public function updatedCountry($value){
@@ -32,7 +42,7 @@
         public function save()
         {
 //            $city = City::findOrFail(intval($this->city))->get();
-            $country = Country::where('id',intval($this->country))->first();
+//            $country = Country::where('id',intval($this->country))->first();
             $candidate = Candidate::updateOrCreate(
                 ['user_account_id' => Auth::id()],
                 [
@@ -40,7 +50,7 @@
                     'cnic' => $this->cnic,
                     'first_language' => $this->lang,
                     'profession' => $this->profession,
-                    'country' => $country->name,
+                    'country' => $this->country,
                     'address' => $this->address,
                     'city' => $this->city,
                 ]

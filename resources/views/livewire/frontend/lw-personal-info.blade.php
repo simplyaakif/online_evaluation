@@ -100,20 +100,26 @@
                             @if($cn->id===92)
                             selected
                             @endif
-                            value="{{$cn->id}}">{{$cn->emoji}} {{$cn->name}} </option>
+                            value="{{$cn->name}}">{{$cn->emoji}} {{$cn->name}} </option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
                     <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                    <select wire:model="city" id="city" name="city" autocomplete="city" class="mt-1 block
-                    w-full py-2 px-3
-                    border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        @foreach($cities as $cy)
-                            <option value="{{$cy->name}}">{{$cy->name}}</option>
-                        @endforeach
-                    </select>
+                    <input wire:model="city" type="text"
+                           name="city"
+                           id="city"
+                           autocomplete="city" class="mt-1
+                                                focus:ring-indigo-500
+                                                focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+{{--                    <select wire:model="city" id="city" name="city" autocomplete="city" class="mt-1 block--}}
+{{--                    w-full py-2 px-3--}}
+{{--                    border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">--}}
+{{--                        @foreach($cities as $cy)--}}
+{{--                            <option value="{{$cy->name}}">{{$cy->name}}</option>--}}
+{{--                        @endforeach--}}
+{{--                    </select>--}}
                 </div>
 
                 <div class="col-span-6">

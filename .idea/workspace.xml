@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_30_200505_add_pay_link_to_bills.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_30_200910_add_bill_url_to_bills.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/candidate/invoices.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +243,7 @@
       <workItem from="1626535296742" duration="21000" />
       <workItem from="1627396988104" duration="1752000" />
       <workItem from="1627399850438" duration="3931000" />
-      <workItem from="1627639693806" duration="9157000" />
+      <workItem from="1627639693806" duration="10832000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -331,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627645312887</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Code 82 Done">
+      <created>1627659204523</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627659204523</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +347,8 @@
     <MESSAGE value="Code 66" />
     <MESSAGE value="Code 75 Done" />
     <MESSAGE value="Code 80 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code 80 Done" />
+    <MESSAGE value="Code 82 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code 82 Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="317" y="20" key="#CLI_Interpreters" timestamp="1625395477499">
@@ -376,10 +375,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1626525171823" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1627645305557">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1627659201289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1627645305557" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1627659201289" />
     <state x="549" y="259" key="Create Blade Component" timestamp="1626276546966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -428,22 +427,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="189" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799381406" />
-    <state x="238" y="10" key="SettingsEditor" timestamp="1627658457620">
+    <state x="238" y="10" key="SettingsEditor" timestamp="1627659533984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1627658457620" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1627658463540">
+    <state x="238" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1627659533984" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1627659958992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1627658463540" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1627659958992" />
     <state x="199" y="68" key="VCS.ChangeListViewerDialog" timestamp="1624799347383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="199" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799347383" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1627645320830">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1627659209416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1627645320830" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1627659209416" />
     <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1625562734700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
