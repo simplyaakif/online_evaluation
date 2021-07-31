@@ -48,26 +48,18 @@
                     <x-candidate.navbar-desktop-item route="{{route('candidate.dashboard')}}">Dashboard
                     </x-candidate.navbar-desktop-item>
 
-                    <a href="{{route('candidate.course')}}"
-                       class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    <x-candidate.navbar-desktop-item route="{{route('candidate.course')}}">
                         New Course
-                    </a>
-                    <a href="{{route('candidate.evaluations')}}"
-                       class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    </x-candidate.navbar-desktop-item>
+
+                    <x-candidate.navbar-desktop-item route="{{route('candidate.evaluations')}}">
                         Evaluation
-                    </a>
-                    <a href="{{route('candidate.invoices')}}"
-                       class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    </x-candidate.navbar-desktop-item>
+
+                    <x-candidate.navbar-desktop-item route="{{route('candidate.invoices')}}">
                         Invoices
-                    </a>
-                    {{--                    <a href="#"--}}
-                    {{--                       class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">--}}
-                    {{--                        Projects--}}
-                    {{--                    </a>--}}
-                    {{--                    <a href="#"--}}
-                    {{--                       class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">--}}
-                    {{--                        Calendar--}}
-                    {{--                    </a>--}}
+                    </x-candidate.navbar-desktop-item>
+
                 </div>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -90,16 +82,6 @@
                         </button>
                     </div>
 
-                    <!--
-                      Dropdown menu, show/hide based on menu state.
-
-                      Entering: "transition ease-out duration-200"
-                        From: "transform opacity-0 scale-95"
-                        To: "transform opacity-100 scale-100"
-                      Leaving: "transition ease-in duration-75"
-                        From: "transform opacity-100 scale-100"
-                        To: "transform opacity-0 scale-95"
-                    -->
                     <div x-show="showprofile" class="origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg
                     py-1 bg-white divide-y divide-gray-100
                     ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical"
@@ -133,14 +115,20 @@
     <div x-show="mobilemenu" class="sm:hidden" id="mobile-menu">
         <div class="pt-2 pb-4 space-y-1">
             <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-            {{--            <a href="#"--}}
-            {{--               class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</a>--}}
-            {{--            <a href="#"--}}
-            {{--               class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</a>--}}
-            {{--            <a href="#"--}}
-            {{--               class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>--}}
-            {{--            <a href="#"--}}
-            {{--               class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</a>--}}
+            <x-candidate.nb-mb-item route="{{route('candidate.dashboard')}}">Dashboard
+            </x-candidate.nb-mb-item>
+
+            <x-candidate.nb-mb-item route="{{route('candidate.course')}}">
+                New Course
+            </x-candidate.nb-mb-item>
+
+            <x-candidate.nb-mb-item route="{{route('candidate.evaluations')}}">
+                Evaluation
+            </x-candidate.nb-mb-item>
+
+            <x-candidate.nb-mb-item route="{{route('candidate.invoices')}}">
+                Invoices
+            </x-candidate.nb-mb-item>
         </div>
     </div>
 </nav>
