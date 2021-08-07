@@ -17,7 +17,7 @@
                             <div class="mt-4 space-y-4">
                                 <div class="flex items-start">
                                     <div class="flex items-center h-5">
-                                        <input id="comments" name="comments" type="checkbox"
+                                        <input id="comments" name="comments" checked="checked" disabled type="checkbox"
                                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                     </div>
                                     <div class="ml-3 text-sm">

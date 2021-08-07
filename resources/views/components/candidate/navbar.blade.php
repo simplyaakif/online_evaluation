@@ -37,15 +37,13 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-8 w-auto"
-                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
-                    <img class="hidden lg:block h-8 w-auto"
-                         src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                         alt="Workflow">
+               <x-candidate.nb-logo/>
+
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                     <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                    <x-candidate.navbar-desktop-item route="{{route('candidate.dashboard')}}">Dashboard
+                    <x-candidate.navbar-desktop-item route="{{route('candidate.dashboard')}}">
+                        Dashboard
                     </x-candidate.navbar-desktop-item>
 
                     <x-candidate.navbar-desktop-item route="{{route('candidate.course')}}">
@@ -53,7 +51,7 @@
                     </x-candidate.navbar-desktop-item>
 
                     <x-candidate.navbar-desktop-item route="{{route('candidate.evaluations')}}">
-                        Evaluation
+                        Evaluations
                     </x-candidate.navbar-desktop-item>
 
                     <x-candidate.navbar-desktop-item route="{{route('candidate.invoices')}}">
@@ -123,7 +121,7 @@
             </x-candidate.nb-mb-item>
 
             <x-candidate.nb-mb-item route="{{route('candidate.evaluations')}}">
-                Evaluation
+                Evaluations
             </x-candidate.nb-mb-item>
 
             <x-candidate.nb-mb-item route="{{route('candidate.invoices')}}">

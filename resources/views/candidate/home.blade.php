@@ -15,7 +15,7 @@
                                 <div class="flex items-center justify-between w-full md:w-auto">
                                     <a href="#">
                                         <span class="sr-only">Workflow</span>
-                                        <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg">
+                                        <x-candidate.nb-logo/>
                                     </a>
                                     <div class="-mr-2 flex items-center md:hidden">
                                         <button @click="{menu=true}" type="button" class="bg-white rounded-md p-2
@@ -56,7 +56,7 @@
                         <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                                    <x-candidate.nb-logo/>
                                 </div>
                                 <div class="-mr-2">
                                     <button @click="{menu=false}" type="button" class="bg-white rounded-md p-2

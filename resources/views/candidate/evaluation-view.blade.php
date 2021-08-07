@@ -4,7 +4,7 @@
     <x-candidate.page-heading title="Evaluation Test" description="Fill In the MCQs and other Questions" step="Step
     02"/>
     <x-candidate.steps/>
-    <x-candidate.evaluation-countdown/>
+{{--    <x-candidate.evaluation-countdown/>--}}
 
     <div class="max-w-6xl mx-auto mt-10">
 

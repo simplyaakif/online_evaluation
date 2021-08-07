@@ -61,9 +61,9 @@
                     Generate Invoice
                 </button>
             @else
-                <button wire:click="generateInvoice" class="py-3">
+                <a target="_blank" href="{{$course->invoice->pay_link}}" class="py-3 block">
                     Pay Invoice
-                </button>
+                </a>
             @endif
         </div>
     </div>
