@@ -3,10 +3,12 @@
     namespace App\Http\Livewire\Frontend;
 
     use App\Http\Controllers\Admin\QuestionController;
+    use App\Mail\EvaluationResult;
     use App\Models\CandidateCourse;
     use App\Models\CandidateEvaluation;
     use App\Models\Question;
     use Illuminate\Support\Facades\Auth;
+    use Illuminate\Support\Facades\Mail;
     use Livewire\Component;
     use function PHPUnit\Framework\countOf;
 
@@ -48,7 +50,7 @@
             $score = 0;
             foreach($this->input['mcqs'] as $mcq) {
                 $answer = json_decode($mcq['selected']);
-                if($answer->correct) {
+                if(isset($answer) && $answer->correct) {
                     $score += 1;
                 }
             }
@@ -60,7 +62,7 @@
                                                                     'candidate_evaluation_score' => $score
                                                                 ]);
 
-
+            Mail::to(Auth::user()->email)->send(new EvaluationResult($candidate_evaluation));
             $this->redirectRoute('candidate.personal');
         }
 

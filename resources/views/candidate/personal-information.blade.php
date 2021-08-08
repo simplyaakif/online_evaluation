@@ -3,7 +3,8 @@
     <x-candidate.page-heading title="Personal Information" description="Enter your information to complete the
     registration" step="Step 03"/>
     <x-candidate.steps  />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/dependencyLibs/inputmask.dependencyLib.min.js" integrity="sha512-b+0AfljGJrModvgOwccNQNSxHHD8vDLBZ9H4bf+dZL89QDJsa2OlGU94bVs5yxLEsAL92/mUcuSp1hJJ6390eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js" integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <div class="max-w-6xl mx-auto mt-10">
 
         <div class="mt-10 sm:mt-0">
@@ -25,4 +26,5 @@
 
 
     </div>
+
 </x-layouts.main>

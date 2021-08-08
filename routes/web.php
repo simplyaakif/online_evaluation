@@ -26,6 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/ar-import',[CController::class,'import'])->name('home');
 
 Route::get('/',[CController::class,'index'])->name('home');
 

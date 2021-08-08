@@ -15,28 +15,11 @@
                 <div class="col-span-6 sm:col-span-3">
                     <label for="mobile" class="block text-sm font-medium
                                         text-gray-700">Mobile Number</label>
-                    <input wire:model="mobile" type="text" name="mobile" placeholder="0300-1234567" id="mobile"
+                    <input wire:model="mobile" data-inputmask="'mask': '99-9999999'" type="text" name="mobile" placeholder="0300-1234567" id="mobile"
                            autocomplete="phone"
                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                     @error('mobile') <p class="mt-2 text-sm text-red-600" id="mobile-error">{{ $message }}</p> @enderror
 
-{{--                    <label for="phone-number" class="block text-sm font-medium text-gray-700">Mobile Number</label>--}}
-{{--                    <div class="mt-1 relative rounded-md shadow-sm">--}}
-{{--                        <div class="absolute inset-y-0 left-0 flex items-center">--}}
-{{--                            <label for="country" class="sr-only">Country</label>--}}
-{{--                            <select wire:model="mo" id="country" name="country" class="focus:ring-indigo-500--}}
-{{--                            focus:border-indigo-500--}}
-{{--                             h-full py-0 pl-3 pr-3 w-24 border-transparent bg-transparent text-gray-500 sm:text-sm--}}
-{{--                             rounded-md">--}}
-{{--                                @foreach($callingcodes as $ci)--}}
-{{--                                <option class="text-right">{{$ci->emoji}} +{{$ci->callingcode}}</option>--}}
-{{--                                @endforeach--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                        <input wire:model="mobile" type="text" name="mobile" id="mobile" autocomplete="phone"--}}
-{{--                               class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-24 sm:text-sm--}}
-{{--                               border-gray-300 rounded-md" placeholder="+1 (555) 987-6543">--}}
-{{--                    </div>--}}
 
                 </div>
 

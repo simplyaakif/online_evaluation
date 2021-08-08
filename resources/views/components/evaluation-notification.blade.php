@@ -25,54 +25,6 @@
                                         <p class="text-gray-500">Evaluation MCQ part score.</p>
                                     </div>
                                 </div>
-{{--                                <!-- This example requires Tailwind CSS v2.0+ -->--}}
-{{--                                <div class="relative">--}}
-{{--                                    <div class="absolute inset-0 flex items-center" aria-hidden="true">--}}
-{{--                                        <div class="w-full border-t border-gray-300"></div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="relative flex justify-center">--}}
-{{--                                                <span class="px-2 bg-white text-sm text-gray-500">--}}
-{{--                                                  Fee of 500 Rs applies for any of the selection below--}}
-{{--                                                </span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                                <div class="flex items-start">--}}
-{{--                                    <div class="flex items-center h-5">--}}
-{{--                                        <input id="mcq-result" name="mcq-result" type="checkbox"--}}
-{{--                                               class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="ml-3 text-sm">--}}
-{{--                                        <label for="mcq-result" class="font-medium text-gray-700">MCQ--}}
-{{--                                            Answers</label>--}}
-{{--                                        <p class="text-gray-500">Detailed report regarding mcq. Answers--}}
-{{--                                            selected by you and actual answers.</p>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="flex items-start">--}}
-{{--                                    <div class="flex items-center h-5">--}}
-{{--                                        <input id="listening-result" name="listening-result" type="checkbox"--}}
-{{--                                               class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="ml-3 text-sm">--}}
-{{--                                        <label for="listening-result" class="font-medium--}}
-{{--                                                text-gray-700">Listening</label>--}}
-{{--                                        <p class="text-gray-500">Your listening score and correct answers.--}}
-{{--                                        </p>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="flex items-start">--}}
-{{--                                    <div class="flex items-center h-5">--}}
-{{--                                        <input id="speaking-result" name="speaking-result" type="checkbox"--}}
-{{--                                               class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">--}}
-{{--                                    </div>--}}
-{{--                                    <div class="ml-3 text-sm">--}}
-{{--                                        <label for="speaking-result" class="font-medium--}}
-{{--                                                text-gray-700">Speaking</label>--}}
-{{--                                        <p class="text-gray-500">Audio sample of your upload and comments on it.--}}
-{{--                                        </p>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
                             </div>
                         </fieldset>
 
@@ -80,7 +32,11 @@
                     <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
                         <a wire:click="dumpResult"
                            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-
+                            <div wire:loading wire:target="submit" class="mr-2 ">
+                                <div class="la-ball-clip-rotate la-sm">
+                                    <div></div>
+                                </div>
+                            </div>
                             Save
                         </a>
                     </div>

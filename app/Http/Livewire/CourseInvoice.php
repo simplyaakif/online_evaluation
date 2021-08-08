@@ -4,15 +4,14 @@
 
     use App\Models\Bill;
     use App\Models\CandidateCourse;
-    use App\Models\TalentPackage as TalentPackageModel;
-    use Carbon\Carbon;
     use Illuminate\Support\Facades\Auth;
+    use Illuminate\Support\Facades\Request as Rq;
     use Livewire\Component;
-    use phpDocumentor\Reflection\PseudoTypes\False_;
+    use Livewire\Request;
 
     class CourseInvoice extends Component {
 
-        public $course;
+        public $course,$url;
         public $invoicegenerated = false;
 
         public function mount()
@@ -26,8 +25,11 @@
         {
 
             $course = CandidateCourse::findOrFail($course);
-            $curl   = curl_init();
-            $json   = [
+            if(!isset(Auth::user()->candidate['mobile'])) {
+                dd("Mobile number incorrect");
+            }
+            $curl = curl_init();
+            $json = [
                 0 => [
                     'MerchantId'       => 'Ace_Institute',
                     'MerchantPassword' => 'Demo@ace21',
@@ -85,7 +87,9 @@
                              ]);
             }
 //            dd("Saved Successfully");
+            $course = CandidateCourse::findOrFail($course->id);
             $this->invoicegenerated = true;
+            $this->course = $course;
 
         }
 

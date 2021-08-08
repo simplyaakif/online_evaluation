@@ -2,9 +2,11 @@
 
     namespace App\Http\Livewire\Frontend;
 
+    use App\Mail\NewRegistraiton;
     use App\Models\Candidate;
     use App\Models\User;
     use Auth;
+    use Illuminate\Support\Facades\Mail;
     use Livewire\Component;
 
     class Registration extends Component {
@@ -38,7 +40,9 @@
                                            ]);
             $user->roles()->sync([2]);
             Auth::login($user);
+            Mail::to($user->email)->send(new NewRegistraiton($user));
             $this->name = $this->email = $this->password = $this->password_confirmation = '';
+
 
             return redirect()->route('candidate.dashboard');
 

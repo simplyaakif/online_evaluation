@@ -18,6 +18,11 @@
                                     <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-indigo-500
                                 uppercase
                                 tracking-wider">
+                                        Sr. #
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-indigo-500
+                                uppercase
+                                tracking-wider">
                                         Name
                                     </th>
                                     <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-indigo-500
@@ -44,6 +49,9 @@
                                 <!-- Odd row -->
                                 @foreach($evaluations as $evaluation)
                                     <tr class="bg-white">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            {{$loop->iteration}}
+                                        </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             {{$candidate->name}}
                                         </td>
