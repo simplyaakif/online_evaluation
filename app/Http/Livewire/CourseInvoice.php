@@ -25,6 +25,8 @@
         {
 
             $course = CandidateCourse::findOrFail($course);
+
+
             if(!isset(Auth::user()->candidate['mobile'])) {
                 dd("Mobile number incorrect");
             }
@@ -87,7 +89,7 @@
                              ]);
             }
 //            dd("Saved Successfully");
-            $course = CandidateCourse::findOrFail($course->id);
+            $course = CandidateCourse::where('id',$course->id)->with('invoice')->first();
             $this->invoicegenerated = true;
             $this->course = $course;
 

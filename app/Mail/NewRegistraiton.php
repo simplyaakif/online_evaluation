@@ -16,7 +16,7 @@
         public function build()
         {
 
-            return $this->from('info@theonlineace.com', 'Admission Department')
+            return $this->from('info@ace.org.pk', 'Admission Department')
                 ->replyTo('americancenterofenglish@gmail.com', 'ACE American Center of English')
                 ->markdown('emails.new-registraiton');
         }

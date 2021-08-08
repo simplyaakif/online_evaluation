@@ -16,6 +16,6 @@
 
         public function build()
         {
-            return $this->markdown('emails.evaluation-result');
+            return $this->subject('Evaluation Score')->markdown('emails.evaluation-result');
         }
     }
