@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +249,7 @@
       <workItem from="1628179018839" duration="1777000" />
       <workItem from="1628255335319" duration="1201000" />
       <workItem from="1628336939200" duration="12717000" />
-      <workItem from="1628417726252" duration="16127000" />
+      <workItem from="1628417726252" duration="16661000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -397,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628491210125</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Code 92 Done">
+      <created>1628491384689</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628491384689</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,10 +460,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1626525171823" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628491208463">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628491382879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628491208463" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628491382879" />
     <state x="549" y="259" key="Create Blade Component" timestamp="1628345863343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -516,10 +524,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="199" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799347383" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628491215106">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628491389383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628491215106" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628491389383" />
     <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1625562734700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -548,10 +556,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1626189215106" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628490293987">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628491784444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628490293987" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628491784444" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

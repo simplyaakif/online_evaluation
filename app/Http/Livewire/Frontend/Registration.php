@@ -11,13 +11,14 @@
 
     class Registration extends Component {
 
-        public $name, $email, $password, $password_confirmation;
+        public $name, $mobile, $email, $password, $password_confirmation;
 
         protected $rules
             = [
                 'name'     => 'required|min:6',
                 'email'    => 'required|email|unique:users',
-                'password' => 'required|confirmed|min:6'
+                'password' => 'required|confirmed|min:6',
+                'mobile'   => 'required|max:11|numeric',
             ];
 
         /**
@@ -36,12 +37,13 @@
                                       ]);
             $candidate = Candidate::create([
                                                'name'            => $this->name,
+                                               'mobile'          => $this->mobile,
                                                'user_account_id' => $user->id
                                            ]);
             $user->roles()->sync([2]);
             Auth::login($user);
             Mail::to($user->email)->send(new NewRegistraiton($user));
-            $this->name = $this->email = $this->password = $this->password_confirmation = '';
+            $this->name = $this->email = $this->mobile = $this->password = $this->password_confirmation = '';
 
 
             return redirect()->route('candidate.dashboard');
