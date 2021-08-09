@@ -4,9 +4,7 @@
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/EvaluationResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/EvaluationResult.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/NewRegistraiton.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/NewRegistraiton.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +250,7 @@
       <workItem from="1628179018839" duration="1777000" />
       <workItem from="1628255335319" duration="1201000" />
       <workItem from="1628336939200" duration="12717000" />
-      <workItem from="1628417726252" duration="12633000" />
+      <workItem from="1628417726252" duration="13635000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -373,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628430215547</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Code 90.5 Done">
+      <created>1628440181864</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1628440181864</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +402,8 @@
     <MESSAGE value="Code 88 Done" />
     <MESSAGE value="Code 89 Done" />
     <MESSAGE value="Code 90 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code 90 Done" />
+    <MESSAGE value="Code 90.5 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code 90.5 Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="317" y="20" key="#CLI_Interpreters" timestamp="1625395477499">
@@ -424,10 +430,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1626525171823" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628430208463">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628440179317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628430208463" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628440179317" />
     <state x="549" y="259" key="Create Blade Component" timestamp="1628345863343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -488,10 +494,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="199" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799347383" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628430224540">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628440186441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628430224540" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628440186441" />
     <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1625562734700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

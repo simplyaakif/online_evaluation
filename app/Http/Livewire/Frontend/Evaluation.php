@@ -29,7 +29,7 @@
          */
         public function mount()
         {
-            $this->mcqs      = Question::with('answers')->limit(15)->inRandomOrder()->get();
+            $this->mcqs      = Question::with('answers')->limit(50)->inRandomOrder()->get();
             $length          = count($this->mcqs);
             $input_structure = [];
             for($i = 0; $i < $length; $i++) {

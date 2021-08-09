@@ -33,8 +33,8 @@
             $curl = curl_init();
             $json = [
                 0 => [
-                    'MerchantId'       => 'Ace_Institute',
-                    'MerchantPassword' => 'Demo@ace21',
+                    'MerchantId'       => env('PAYPRO_MERCHANT_ID'),
+                    'MerchantPassword' => env('PAYPRO_MERCHANT_PASSWORD'),
                 ],
                 1 => [
                     'OrderNumber'              => 'Online-Evaluation-' . now()->unix(),
@@ -58,7 +58,7 @@
 
             $finalUrl = json_encode($json);
             curl_setopt_array($curl, array(
-                CURLOPT_URL            => 'https://demoapi.paypro.com.pk/cpay/co?oJson=' . $finalUrl . '',
+                CURLOPT_URL            => env('PAYPRO_MERCHANT_URL') .'co?oJson='. $finalUrl . '',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING       => '',
                 CURLOPT_MAXREDIRS      => 10,
