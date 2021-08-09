@@ -16,6 +16,6 @@
 
         public function build()
         {
-            return $this->subject('Evaluation Score')->markdown('emails.evaluation-result');
+            return $this->from('info@ace.org.pk', 'Admission Department')->subject('Evaluation Score')->markdown('emails.evaluation-result');
         }
     }

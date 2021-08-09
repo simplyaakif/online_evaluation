@@ -17,6 +17,7 @@
         {
 
             return $this->from('info@ace.org.pk', 'Admission Department')
+                ->cc('acedpt@gmail.com')
                 ->replyTo('americancenterofenglish@gmail.com', 'ACE American Center of English')
                 ->markdown('emails.new-registraiton');
         }

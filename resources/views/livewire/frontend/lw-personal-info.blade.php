@@ -15,7 +15,7 @@
                 <div class="col-span-6 sm:col-span-3">
                     <label for="mobile" class="block text-sm font-medium
                                         text-gray-700">Mobile Number</label>
-                    <input wire:model="mobile" data-inputmask="'mask': '99-9999999'" type="text" name="mobile" placeholder="0300-1234567" id="mobile"
+                    <input wire:model="mobile" data-inputmask="'mask': '99-9999999'" type="text" name="mobile" placeholder="03001234567" id="mobile"
                            autocomplete="phone"
                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                     @error('mobile') <p class="mt-2 text-sm text-red-600" id="mobile-error">{{ $message }}</p> @enderror
