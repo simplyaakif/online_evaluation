@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +251,7 @@
       <workItem from="1628179018839" duration="1777000" />
       <workItem from="1628255335319" duration="1201000" />
       <workItem from="1628336939200" duration="12717000" />
-      <workItem from="1628417726252" duration="16661000" />
+      <workItem from="1628417726252" duration="18665000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -405,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628491384689</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Code 93 Done">
+      <created>1628492008230</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1628492008230</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +442,8 @@
     <MESSAGE value="Code 91 Done" />
     <MESSAGE value="Code 91.5 Done" />
     <MESSAGE value="Code 92 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code 92 Done" />
+    <MESSAGE value="Code 93 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code 93 Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="317" y="20" key="#CLI_Interpreters" timestamp="1625395477499">
@@ -460,10 +470,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1626525171823" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628491382879">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1628492006053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628491382879" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628492006053" />
     <state x="549" y="259" key="Create Blade Component" timestamp="1628345863343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -516,18 +526,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="238" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1628353598058" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1628491337047">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1628500920183">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1628491337047" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1628500920183" />
     <state x="199" y="68" key="VCS.ChangeListViewerDialog" timestamp="1624799347383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="199" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1624799347383" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628491389383">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628492012656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628491389383" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628492012656" />
     <state x="390" y="99" width="585" height="530" key="find.popup" timestamp="1625562734700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -556,10 +566,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1626189215106" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628491784444">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628494830500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628491784444" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628494830500" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

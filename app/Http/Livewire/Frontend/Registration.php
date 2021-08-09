@@ -15,10 +15,10 @@
 
         protected $rules
             = [
-                'name'     => 'required|min:6',
+                'name'     => 'required|min:4',
                 'email'    => 'required|email|unique:users',
                 'password' => 'required|confirmed|min:6',
-                'mobile'   => 'required|max:11|numeric',
+                'mobile'   => 'required|numeric',
             ];
 
         /**

@@ -18,6 +18,7 @@
     @livewireStyles
     <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/animation.css')}}">
+    <script src="https://unpkg.com/imask"></script>
     <title>{{$title}}</title>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col justify-between">
@@ -49,7 +50,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 {{$scripts}}
 
 
