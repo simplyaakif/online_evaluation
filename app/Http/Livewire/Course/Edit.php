@@ -12,6 +12,9 @@ class Edit extends Component
 {
     public Course $course;
 
+    public  $course_durations;
+    public $session_durations;
+
     public array $session_time = [];
 
     public array $listsForFields = [];
@@ -23,6 +26,9 @@ class Edit extends Component
     public function mount(Course $course)
     {
         $this->course             = $course;
+        $this->course_durations            = $this->course->sessionDurations;
+        $this->session_durations = SessionDuration::all();
+
         $this->session_duration   = $this->course->sessionDurations()->pluck('id')->toArray();
         $this->session_time       = $this->course->sessionTime()->pluck('id')->toArray();
         $this->session_start_date = $this->course->sessionStartDate()->pluck('id')->toArray();

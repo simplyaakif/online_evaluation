@@ -17,7 +17,7 @@
                                 <label for="first_name" class="block text-sm font-medium
                                         text-gray-700">Listen the audio and answer the following questions</label>
                                 <audio controls class="w-full mt-4 ">
-                                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                                    <source src="{{asset('storage/listening/list_01.mp4')}}" type="audio/mpeg">
                                     Your browser does not support the audio element.
                                 </audio>
                             </div>

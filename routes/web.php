@@ -26,6 +26,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/ar-markup',function (){
+    return view('test-markup');
+});
+
 Route::get('/ar-import',[CController::class,'import'])->name('home');
 
 Route::get('/',[CController::class,'index'])->name('home');
@@ -71,6 +75,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth','is
 
     // Course
     Route::resource('courses', CourseController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::get('courses/fee/{course}', [CourseController::class, 'fee'])->name('courses.fee');
 
     // Session Duration
     Route::resource('session-durations', SessionDurationController::class, ['except' => ['store', 'update', 'destroy']]);

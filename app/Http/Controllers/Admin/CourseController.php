@@ -39,4 +39,11 @@ class CourseController extends Controller
 
         return view('admin.course.show', compact('course'));
     }
+
+    public function fee(Course $course)
+    {
+        $course->load('sessionDurations', 'sessionTime', 'sessionStartDate');
+        return view('admin.course.fee', compact('course'));
+
+    }
 }

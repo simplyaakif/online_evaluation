@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.listening-section section{
+    @apply bg-white rounded px-8 py-4 my-4
+}
+
+.listening-section section h1{
+    @apply font-bold text-2xl
+}
+
+.listening-section section h2{
+    @apply  italic text-lg
+}
+
+.listening-section section h4{
+    @apply  mt-4
+}
+
+.listening-section section ul{
+    @apply ml-6
+}
+
+.listening-section section ul li{
+    @apply flex items-center
+}
+
+.listening-section section ul input[type='checkbox']{
+    @apply mr-2
+}
+
+.listening-section section input[type='text']{
+    @apply border-0 border-b border-dashed border-gray-400 bg-transparent
+}
+
+.listening-section section td{
+    @apply border p-4
+}
+
+.listening-section section img{
+    @apply ml-4
+}

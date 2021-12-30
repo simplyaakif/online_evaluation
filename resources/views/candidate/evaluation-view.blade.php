@@ -11,6 +11,7 @@
         @livewire('frontend.evaluation')
 
 
+
         <div x-data="{modal:false}">
             <div x-show="modal">
 

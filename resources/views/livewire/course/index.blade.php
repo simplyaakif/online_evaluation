@@ -83,6 +83,9 @@
                             </td>
                             <td>
                                 <div class="flex justify-end">
+                                    <a href="{{ route('admin.courses.fee', $course) }}"
+                                        class="btn btn-sm btn-info
+                                       mr-2" >Fee</a>
                                     @can('course_show')
                                         <a class="btn btn-sm btn-info mr-2" href="{{ route('admin.courses.show', $course) }}">
                                             {{ trans('global.view') }}

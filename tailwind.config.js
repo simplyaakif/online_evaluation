@@ -1,7 +1,6 @@
 const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-    important: false,
     mode: 'jit',
     purge: [
         './resources/views/livewire/evaluation-test/**/*.php',
@@ -12,6 +11,7 @@ module.exports = {
         './resources/views/candidate/**/*.blade.php',
         './resources/views/components/layouts/**/*blade.php',
         './resources/views/components/candidate/**/*.blade.php',
+        './resources/views/test-markup.blade.php',
     ],
     theme: {
         extend: {
