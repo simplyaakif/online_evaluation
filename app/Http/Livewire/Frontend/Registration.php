@@ -42,7 +42,7 @@
                                            ]);
             $user->roles()->sync([2]);
             Auth::login($user);
-            Mail::to($user->email)->send(new NewRegistraiton($user));
+            Mail::to($user->email)->queue (new NewRegistraiton($user));
             $this->name = $this->email = $this->mobile = $this->password = $this->password_confirmation = '';
 
 

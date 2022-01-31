@@ -54,9 +54,9 @@
                         Evaluations
                     </x-candidate.navbar-desktop-item>
 
-                    <x-candidate.navbar-desktop-item route="{{route('candidate.invoices')}}">
-                        Invoices
-                    </x-candidate.navbar-desktop-item>
+{{--                    <x-candidate.navbar-desktop-item route="{{route('candidate.invoices')}}">--}}
+{{--                        Invoices--}}
+{{--                    </x-candidate.navbar-desktop-item>--}}
 
                 </div>
             </div>
@@ -124,9 +124,9 @@
                 Evaluations
             </x-candidate.nb-mb-item>
 
-            <x-candidate.nb-mb-item route="{{route('candidate.invoices')}}">
-                Invoices
-            </x-candidate.nb-mb-item>
+{{--            <x-candidate.nb-mb-item route="{{route('candidate.invoices')}}">--}}
+{{--                Invoices--}}
+{{--            </x-candidate.nb-mb-item>--}}
         </div>
     </div>
 </nav>

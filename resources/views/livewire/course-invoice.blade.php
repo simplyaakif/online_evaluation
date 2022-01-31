@@ -1,1 +1,2 @@
-    <x-candidate.course-component :course="$course" :invoicegenerated="$invoicegenerated"/>
+<x-candidate.course-component :course="$course" :invoicegenerated="$invoicegenerated"/>
+

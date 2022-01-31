@@ -2,7 +2,9 @@
     'course'=>'',
     'invoicegenerated'=>''
 ])
-@php $course =json_decode($course) @endphp
+<div>
+{{--@php $course =json_decode($course) @endphp--}}
+{{--{{json_encode($course)}}--}}
 <div class="w-full mx-auto bg-white md:col-span-2 overflow-hidden self-start shadow rounded-lg">
     <div wire:loading.flex>
         <div class="bg-white h-56 w-full flex items-center justify-center">
@@ -53,18 +55,19 @@
         <div class="block bg-indigo-600 text-white text-center ">
             @if(!$invoicegenerated || !$course->invoice)
                 <button wire:click="generateInvoice({{ $course->id }})" class="py-3">
-                    <div wire:loading wire:target="submit" class="mr-2 ">
-                        <div class="la-ball-clip-rotate la-sm">
-                            <div></div>
-                        </div>
-                    </div>
+{{--                <button id="downloadInvoice" onclick="generateInvoice()" class="py-3">--}}
                     Generate Invoice
                 </button>
             @else
-                <a target="_blank" href="{{$course->invoice->pay_link}}" class="py-3 block">
-                    Pay Invoice
+                <a onclick="generateInvoice{{$course->id}}()" class="py-3 block">
+                    Download Invoice
                 </a>
             @endif
         </div>
     </div>
+</div>
+
+@if($invoicegenerated)
+    <x-invoice-generator :course="$course"/>
+@endif
 </div>

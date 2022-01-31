@@ -127,15 +127,20 @@ class Candidate extends Model implements HasMedia
         return static::GENDER_RADIO[$this->gender] ?? null;
     }
 
-    public function getDobAttribute($value)
+    public function getDateOfBirthAttribute()
     {
-        return $value ? Carbon::parse($value)->format(config('project.date_format')) : null;
+        return $this->dob ? Carbon::parse($this->dob)->format(config('project.date_format')) : null;
     }
 
-    public function setDobAttribute($value)
+    public function getDobAttribute($value)
     {
-        $this->attributes['dob'] = $value ? Carbon::createFromFormat(config('project.date_format'), $value)->format('Y-m-d') : null;
+        return $value ? Carbon::parse($value)->format('Y-m-d') : null;
     }
+
+//    public function setDobAttribute($value)
+//    {
+//        $this->attributes['dob'] = $value ? Carbon::createFromFormat(config('project.date_format'), $value)->format('Y-m-d') : null;
+//    }
 
     protected function serializeDate(DateTimeInterface $date)
     {

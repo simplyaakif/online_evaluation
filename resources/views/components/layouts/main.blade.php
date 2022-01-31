@@ -1,7 +1,8 @@
 @props([
     'title'=>'Online Evaluation',
     'footer'=>true,
-    'scripts'=>''
+    'scripts'=>'',
+    'css'=>''
 ])
 
     <!doctype html>
@@ -16,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap" rel="stylesheet">
     @livewireStyles
+    {{$css}}
     <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/animation.css')}}">
     <script src="https://unpkg.com/imask"></script>

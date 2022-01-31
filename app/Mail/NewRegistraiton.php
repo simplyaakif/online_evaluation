@@ -2,9 +2,13 @@
 
     namespace App\Mail;
 
+    use Illuminate\Bus\Queueable;
+    use Illuminate\Contracts\Queue\ShouldQueue;
     use Illuminate\Mail\Mailable;
 
-    class NewRegistraiton extends Mailable {
+    class NewRegistraiton extends Mailable implements ShouldQueue {
+
+        use Queueable;
 
         public $user;
 

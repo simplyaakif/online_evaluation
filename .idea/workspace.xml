@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Code 93.6 Done">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Course/Fee.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/course/fee.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/test-listening.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/course/fee.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test-markup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
+    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Mail/RegistrationNotifyInstituteMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/invoice-generator.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/shared/data-input.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/registration-notify-institute.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Course/Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Course/Edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CourseInvoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/NewRegistraiton.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/NewRegistraiton.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/evaluation-view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/evaluation-view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/evaluation-listening.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/evaluation-listening.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/course/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/course/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/course/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/course/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/summary.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/course-invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/course-invoice.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/evaluation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/evaluation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/registration.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Code60" />
+        <entry key="$PROJECT_DIR$" value="evaluationUpdateSpeaking" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -234,6 +241,7 @@
       <recent name="E:\Aakif Work\Systems Developments\online-evaluation\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Aakif Work\Systems Developments\evaluation-online\resources\views\components\shared" />
       <recent name="E:\Aakif Work\Systems Developments\online-evaluation\storage\app\public\listening" />
       <recent name="E:\Aakif Work\Systems Developments\online-evaluation\public\css" />
       <recent name="E:\Aakif Work\Systems Developments\online-evaluation\resources\views\components\candidate" />
@@ -244,7 +252,7 @@
       <command value="npm run watch" />
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="npm.watch">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -329,7 +337,23 @@
       <workItem from="1640330524731" duration="167000" />
       <workItem from="1640416728171" duration="1121000" />
       <workItem from="1640771685816" duration="1136000" />
-      <workItem from="1640779581109" duration="6232000" />
+      <workItem from="1640779581109" duration="7162000" />
+      <workItem from="1640879251297" duration="647000" />
+      <workItem from="1641021813690" duration="176000" />
+      <workItem from="1641022286764" duration="607000" />
+      <workItem from="1641040665090" duration="700000" />
+      <workItem from="1641041527675" duration="4355000" />
+      <workItem from="1641196318388" duration="2874000" />
+      <workItem from="1641374045286" duration="1758000" />
+      <workItem from="1641453790631" duration="5402000" />
+      <workItem from="1643024111351" duration="5957000" />
+      <workItem from="1643091276148" duration="2797000" />
+      <workItem from="1643104778889" duration="830000" />
+      <workItem from="1643110123566" duration="3904000" />
+      <workItem from="1643187699167" duration="3852000" />
+      <workItem from="1643292104290" duration="1108000" />
+      <workItem from="1643372852509" duration="969000" />
+      <workItem from="1643631393881" duration="4894000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -506,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628596967122</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fee Added">
+      <created>1640875747868</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640875747868</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,16 +568,7 @@
     <MESSAGE value="Code 93 Done" />
     <MESSAGE value="Code 93.5 Done" />
     <MESSAGE value="Code 93.6 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code 93.6 Done" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>mock:///Tinker Console</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fee Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fee Added" />
   </component>
 </project>

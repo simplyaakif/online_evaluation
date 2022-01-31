@@ -18,6 +18,9 @@
             = [
                 'mobile'     => 'required',
                 'dob'    => 'required',
+                'profession'=>'required',
+                'city'=>'required',
+                'address'=>'required',
             ];
 
 
@@ -29,8 +32,9 @@
 
             $this->name       = Auth::user()->name;
             $this->email      = Auth::user()->email;
-            $this->mobile     = Auth::user()->candidate['mobile'];
+            $this->mobile     = Auth::user()->candidate['mobile']? Auth::user()->candidate['mobile']:null;
             $this->cnic       = Auth::user()->candidate['cnic'];
+            $this->dob       = Auth::user()->candidate['dob'];
             $this->lang       = Auth::user()->candidate['first_language'];
             $this->profession = Auth::user()->candidate['profession'];
             $this->address    = Auth::user()->candidate['address'];
@@ -58,6 +62,7 @@
                                                                                         'country'        => $this->country,
                                                                                         'address'        => $this->address,
                                                                                         'city'           => $this->city,
+                                                                                        'dob'=>$this->dob,
                                                                                     ]);
 
             $this->redirectRoute('candidate.summary');

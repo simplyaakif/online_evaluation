@@ -5,7 +5,7 @@
                 Name
             </label>
             <div class="mt-1">
-                <input wire:model="name" id="name" name="name" type="text" autocomplete="name" required
+                <input wire:model.defer="name" id="name" name="name" type="text" autocomplete="name" required
                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 @error('name') <p class="mt-2 text-sm text-red-600" id="name-error">{{ $message }}</p> @enderror
             </div>
@@ -15,7 +15,7 @@
                 Mobile Number
             </label>
             <div class="mt-1">
-                <input wire:model="mobile" placeholder="03335335792" id="mobile" name="mobile" type="text"
+                <input wire:model.defer="mobile"  id="mobile" name="phone" type="text"
                        autocomplete="phone" required
                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 @error('mobile') <p class="mt-2 text-sm text-red-600" id="email-error">{{ $message }}</p> @enderror
@@ -33,7 +33,7 @@
                 Email address
             </label>
             <div class="mt-1">
-                <input wire:model="email" id="email" name="email" type="email" autocomplete="email" required
+                <input wire:model.defer="email" id="email" name="email" type="email" autocomplete="email" required
                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 @error('email') <p class="mt-2 text-sm text-red-600" id="email-error">{{ $message }}</p> @enderror
             </div>
@@ -44,7 +44,7 @@
                 Password
             </label>
             <div class="mt-1">
-                <input wire:model="password" id="password" name="password" type="password"
+                <input wire:model.defer="password" id="password" name="password" type="password"
                        autocomplete="current-password"
                        required
                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -56,7 +56,7 @@
                 Confirm Password
             </label>
             <div class="mt-1">
-                <input wire:model="password_confirmation" id="password" name="password" type="password"
+                <input wire:model.defer="password_confirmation" id="password" name="password" type="password"
                        autocomplete="current-password"
                        required
                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">

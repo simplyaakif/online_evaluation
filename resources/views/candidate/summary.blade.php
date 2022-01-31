@@ -31,7 +31,7 @@
                             Date of Birth
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900">
-                            {{$candidate->dob}}
+                            {{$candidate->date_of_birth}}
                         </dd>
                     </div>
                     <div class="sm:col-span-1">
@@ -143,7 +143,8 @@
             </div>
         </div>
         <div class="text-right">
-            <a class="bg-indigo-600 px-4 py-2 mt-10 inline-block text-right text-white rounded-md" href="{{route('candidate.invoice')
+            <a class="bg-indigo-600 px-4 py-2 mt-10 inline-block text-right text-white rounded-md"
+               href="{{route('candidate.dashboard')
             }}">
                 Generate Invoices
             </a>
