@@ -22,8 +22,7 @@
         "laravel/ui": "^3.2",
         "laraveldaily/laravel-charts": "^0.1.24",
         "livewire/livewire": "^2.3",
-        "spatie/laravel-medialibrary": "^9.4",
-        "lifetimesms/gateway": "dev-master"
+        "spatie/laravel-medialibrary": "^9.4"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -42,11 +41,6 @@
             "composer/package-versions-deprecated": true
         }
     },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/simplyaakif/gateway"
-    }
-    ],
     "extra": {
         "laravel": {
             "dont-discover": []
