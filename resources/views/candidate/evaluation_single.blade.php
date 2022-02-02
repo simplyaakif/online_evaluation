@@ -29,6 +29,7 @@
                             <div class="mt-2 text-sm">
                                 <ul>
                                     @foreach($mcq->answers as $answer)
+                                        @isset($input->id)
                                         <li>
                                             @if ($input->id==$answer->id && $answer->correct )
                                                 <label class="flex p-2 rounded-md items-center mb-2 bg-green-200">
@@ -59,11 +60,21 @@
                                                         name="mcq-{{$mcq->id}}"
                                                         type="radio">
                                                     <span
-                                                        class="ml-2 inline-block">{{$answer->title}} - Selected
-                                                        By You</span>
+                                                        class="ml-2 inline-block">{{$answer->title}} </span>
                                                 </label>
                                             @endif
                                         </li>
+                                        @else
+                                            <li>
+                                                <label class="flex p-2 rounded-md items-center mb-2 ">
+                                                    <input
+                                                        name="mcq-{{$mcq->id}}"
+                                                        type="radio">
+                                                    <span
+                                                        class="ml-2 inline-block">{{$answer->title}} </span>
+                                                </label>
+                                            </li>
+                                        @endisset
                                     @endforeach
 
                                 </ul>

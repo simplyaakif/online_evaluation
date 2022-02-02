@@ -13,7 +13,6 @@
       <excludeFolder url="file://$MODULE_DIR$/public/vendor" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/khsing/world" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/dusk" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/lifetimesms/gateway" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-factory" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-web-tinker" />
       <excludeFolder url="file://$MODULE_DIR$/storage" />

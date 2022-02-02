@@ -129,7 +129,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-web-tinker" />
       <path value="$PROJECT_DIR$/vendor/khsing/world" />
-      <path value="$PROJECT_DIR$/vendor/lifetimesms/gateway" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
       <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
