@@ -63,6 +63,7 @@
                                                                 ]);
 
             Mail::to(Auth::user()->email)->send(new EvaluationResult($candidate_evaluation));
+
             $this->redirectRoute('candidate.personal');
         }
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Candidate;
+use DB;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -35,9 +36,17 @@ class CandidateController extends Controller
     {
         abort_if(Gate::denies('candidate_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
+
         $candidate->load('userAccount');
 
-        return view('admin.candidate.show', compact('candidate'));
+        $evaluations = DB::table('candidates')
+            ->where('candidates.id',$candidate->id)
+            ->join('candidate_courses','candidates.user_account_id','candidate_courses.user_id')
+            ->join('candidate_evaluations','candidate_courses.id','candidate_evaluations.candidate_course_id')
+            ->get();
+
+
+        return view('admin.candidate.show', compact('candidate','evaluations'));
     }
 
     public function storeMedia(Request $request)

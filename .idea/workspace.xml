@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/EvaluationResultAceMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/evaluation-result-ace.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/evaluation_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/evaluation_single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CandidateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +328,9 @@
       <workItem from="1643292104290" duration="1108000" />
       <workItem from="1643372852509" duration="969000" />
       <workItem from="1643631393881" duration="6949000" />
-      <workItem from="1643796368792" duration="1695000" />
+      <workItem from="1643796368792" duration="2879000" />
+      <workItem from="1643887003623" duration="1190000" />
+      <workItem from="1644415691934" duration="4736000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -523,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643641051941</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Evaluation Error Settled">
+      <created>1643799671243</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1643799671243</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +544,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="60 Percent Done" />
     <MESSAGE value="Test" />
     <MESSAGE value="Updated Course Select Page" />
     <MESSAGE value="Updated Course Select Page and Routes" />
@@ -557,6 +568,7 @@
     <MESSAGE value="Fee Added" />
     <MESSAGE value="Candidate Invoice Added" />
     <MESSAGE value="Composer setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composer setup" />
+    <MESSAGE value="Evaluation Error Settled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Error Settled" />
   </component>
 </project>
