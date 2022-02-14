@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Mail/EvaluationResultAceMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/evaluation-result-ace.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CandidateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CandidateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -330,7 +322,7 @@
       <workItem from="1643631393881" duration="6949000" />
       <workItem from="1643796368792" duration="2879000" />
       <workItem from="1643887003623" duration="1190000" />
-      <workItem from="1644415691934" duration="4736000" />
+      <workItem from="1644415691934" duration="5036000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -535,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643799671243</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Evaluation Score Shown in Admin">
+      <created>1644814782292</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1644814782292</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +543,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Test" />
     <MESSAGE value="Updated Course Select Page" />
     <MESSAGE value="Updated Course Select Page and Routes" />
     <MESSAGE value="Course Select Done" />
@@ -569,6 +567,7 @@
     <MESSAGE value="Candidate Invoice Added" />
     <MESSAGE value="Composer setup" />
     <MESSAGE value="Evaluation Error Settled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Error Settled" />
+    <MESSAGE value="Evaluation Score Shown in Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Score Shown in Admin" />
   </component>
 </project>

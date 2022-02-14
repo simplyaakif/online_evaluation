@@ -109,7 +109,9 @@
                                 @endforeach
                             </td>
                             <td>
+                                <a class="" href="{{ route('admin.candidates.show', $candidate) }}">
                                 {{ $candidate->name }}
+                                </a>
                             </td>
                             <td>
                                 {{ $candidate->mobile }}
