@@ -2,10 +2,10 @@
     <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
             <div class="px-4 sm:px-0">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">Notifications</h3>
-                <p class="mt-1 text-sm text-gray-600">
-                    Decide which communications you'd like to receive and how.
-                </p>
+{{--                <h3 class="text-lg font-medium leading-6 text-gray-900">Notifications</h3>--}}
+{{--                <p class="mt-1 text-sm text-gray-600">--}}
+{{--                    Decide which communications you'd like to receive and how.--}}
+{{--                </p>--}}
             </div>
         </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
@@ -13,19 +13,19 @@
                 <div class="shadow overflow-hidden sm:rounded-md">
                     <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
                         <fieldset>
-                            <legend class="text-base font-medium text-gray-900">By Email</legend>
-                            <div class="mt-4 space-y-4">
-                                <div class="flex items-start">
-                                    <div class="flex items-center h-5">
-                                        <input id="comments" name="comments" checked="checked" disabled type="checkbox"
-                                               class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-                                    </div>
-                                    <div class="ml-3 text-sm">
-                                        <label for="comments" class="font-medium text-gray-700">Score</label>
-                                        <p class="text-gray-500">Evaluation MCQ part score.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <legend class="text-base font-medium text-gray-900">Proceed Forward. Click Save</legend>
+{{--                            <div class="mt-4 space-y-4">--}}
+{{--                                <div class="flex items-start">--}}
+{{--                                    <div class="flex items-center h-5">--}}
+{{--                                        <input id="comments" name="comments" checked="checked" disabled type="checkbox"--}}
+{{--                                               class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">--}}
+{{--                                    </div>--}}
+{{--                                    <div class="ml-3 text-sm">--}}
+{{--                                        <label for="comments" class="font-medium text-gray-700">Score</label>--}}
+{{--                                        <p class="text-gray-500">Evaluation MCQ part score.</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </fieldset>
 
                     </div>

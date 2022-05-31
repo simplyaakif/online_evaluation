@@ -85,16 +85,17 @@
 
         public function updatedCourseTime($value)
         {
-            $this->finalUpdate();
             $time                        = SessionTime::findOrFail($value);
             $this->final['session_time'] = $time;
+//            $this->finalUpdate();
+//            dd($value,$this->final);
         }
 
         public function updatedSessionDate($value)
         {
-            $this->finalUpdate();
             $date                        = SessionStartDate::findOrFail($value);
             $this->final['session_date'] = $date;
+//            $this->finalUpdate();
         }
 
         public function hydrate()
@@ -116,6 +117,7 @@
 
         public function submit()
         {
+//            dd($this->final);
             $candidateCourse = CandidateCourse::create([
                 'course_name' => $this->final['course']['title'],
                 'course_duration' => $this->final['course_duration']['session_duration'],

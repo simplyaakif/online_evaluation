@@ -1,6 +1,14 @@
 <x-layouts.main>
     <x-candidate.navbar/>
-    <x-candidate.page-heading title="Dashboard" step="Candidate" description="List of Courses you have selected."/>
+    <x-candidate.page-heading title="Dashboard" step="Candidate" description="List of Courses you have selected.">
+    <div class="mt-4">
+        <a href="{{route('candidate.course')}}" class="inline-flex items-center justify-center px-4 py-2 border
+                    border-transparent font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
+                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm">
+            Select New Course
+        </a>
+    </div>
+    </x-candidate.page-heading>
 
     @if($courses->count()==0)
         <div class="max-w-4xl mx-auto px-8 py-4">

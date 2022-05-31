@@ -1,5 +1,5 @@
 <div>
-{{--    <code class="text-sm">{{json_encode($final['session_date'])}}</code>--}}
+    {{--    <code class="text-sm">{{json_encode($final['session_date'])}}</code>--}}
     <div class="grid grid-cols-1 mx-auto md:grid-cols-6 gap-4 auto-cols-min">
         <div class="bg-white md:col-span-4 overflow-hidden shadow rounded-lg">
             <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
@@ -35,6 +35,7 @@
                             @endforeach
                         </select>
                     </div>
+
                     <div>
                         <label for="course_time" class="block text-sm font-medium text-gray-700">Available Time
                             Slots</label>
@@ -48,6 +49,13 @@
                             @endforeach
                         </select>
                     </div>
+
+{{--                    <div>--}}
+{{--                        @if($course)--}}
+{{--                            {{json_encode($course)}}--}}
+{{--                        @endif--}}
+{{--                    </div>--}}
+
                     <div>
                         <label for="session_date" class="block text-sm font-medium text-gray-700">Select Date</label>
                         <select wire:model="session_date" id="session_date" name="session_date"
@@ -75,7 +83,7 @@
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-4 sm:px-6 flex justify-end">
-                <button wire:click="submit"  class="inline-flex items-center px-4 py-2 border
+                <button wire:click="submit" class="inline-flex items-center px-4 py-2 border
                 border-transparent                text-sm                font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     <div wire:loading wire:target="submit" class="mr-2 ">
                         <div class="la-ball-clip-rotate la-sm">
@@ -88,9 +96,10 @@
         </div>
         <!-- This example requires Tailwind CSS v2.0+ -->
         {{--    <div class="w-full">--}}
+{{--        {{json_encode($final)}}--}}
         @if($course_duration)
             <div class="w-full mx-auto bg-white md:col-span-2 overflow-hidden self-start shadow rounded-lg">
-                <div wire:loading.flex  >
+                <div wire:loading.flex>
                     <div class="bg-white h-56 w-full flex items-center justify-center">
                         <div class="la-square-jelly-box la-dark">
                             <div></div>

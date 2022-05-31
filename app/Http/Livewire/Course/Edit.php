@@ -59,6 +59,9 @@ class Edit extends Component
                 'string',
                 'nullable',
             ],
+            'course.is_weekly' => [
+                'nullable',
+            ],
             'session_duration' => [
                 'array',
             ],

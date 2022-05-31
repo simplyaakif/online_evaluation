@@ -4,9 +4,9 @@
 
     use App\Models\Candidate;
     use Illuminate\Support\Facades\Auth;
-    use Khsing\World\Models\City;
-    use Khsing\World\Models\Country;
-    use Khsing\World\World;
+//    use Khsing\World\Models\City;
+//    use Khsing\World\Models\Country;
+//    use Khsing\World\World;
     use Livewire\Component;
 
     class LwPersonalInfo extends Component {
@@ -26,9 +26,9 @@
 
         public function mount()
         {
-            $this->countries    = Country::orderBy('name', 'asc')->get();
-            $this->callingcodes = Country::orderBy('callingcode', 'asc')->get();
-            $this->cities       = City::where('country_id', 70)->get();
+//            $this->countries    = Country::orderBy('name', 'asc')->get();
+//            $this->callingcodes = Country::orderBy('callingcode', 'asc')->get();
+//            $this->cities       = City::where('country_id', 70)->get();
 
             $this->name       = Auth::user()->name;
             $this->email      = Auth::user()->email;
@@ -45,7 +45,7 @@
 
         public function updatedCountry($value)
         {
-            $this->cities = City::where('country_id', $value)->get();
+//            $this->cities = City::where('country_id', $value)->get();
 
         }
 

@@ -10,37 +10,6 @@
             {{ trans('cruds.course.fields.title_helper') }}
         </div>
     </div>
-{{--    <div>--}}
-{{--        <div>--}}
-{{--            <button type="button" wire:click="" class="bg-black p-2">Add Duration</button>--}}
-{{--        </div>--}}
-{{--        <div class="border border-gray-200 p-2">--}}
-{{--            @foreach($course_durations as $duration)--}}
-{{--                <div class="flex border border-gray-200 items-center justify-between p-2">--}}
-{{--                    <div class="flex">--}}
-{{--                        <div class="px-2">--}}
-{{--                            <select name="" id="">--}}
-{{--                                @foreach ($session_durations as $session)--}}
-{{--                                    <option value='{{ $session->id }}'--}}
-{{--                                            @if ($session->session_duration == $duration->session_duration)--}}
-{{--                                            selected="selected"--}}
-{{--                                        @endif--}}
-{{--                                    >{{ $session->session_duration }}</option>--}}
-{{--                                @endforeach--}}
-{{--                            </select>--}}
-{{--                            --}}{{--                {{$duration->session_duration}}--}}
-{{--                        </div>--}}
-{{--                        <div class="px-2">--}}
-{{--                            <input type="text" value="{{$duration->pivot->price}}">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div>--}}
-{{--                        <button type="button">Remove</button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-{{--    </div>--}}
         <div class="form-group {{ $errors->has('session_duration') ? 'invalid' : '' }}">
             <label class="form-label" for="session_duration">{{ trans('cruds.course.fields.session_duration') }}</label>
             <x-select-list class="form-control" id="session_duration" name="session_duration" wire:model="session_duration" :options="$this->listsForFields['session_duration']" multiple />
@@ -61,6 +30,11 @@
         <div class="help-block">
             {{ trans('cruds.course.fields.session_time_helper') }}
         </div>
+    </div>
+    <div>
+        <label for=""> Is Weekly Session Date - Mondays of next two months
+            <input type="checkbox" wire:model="course.is_weekly">
+        </label>
     </div>
     <div class="form-group {{ $errors->has('session_start_date') ? 'invalid' : '' }}">
         <label class="form-label" for="session_start_date">{{ trans('cruds.course.fields.session_start_date') }}</label>

@@ -8,10 +8,16 @@
     class EvaluationResult extends Mailable {
 
         public $candidateEvaluation;
+        public $candidateCourse;
+       public $totalQuestion;
 
         public function __construct(CandidateEvaluation $candidateEvaluation)
         {
             $this->candidateEvaluation=$candidateEvaluation;
+            $this->candidateCourse = $candidateEvaluation->course->name;
+            $input = json_decode($candidateEvaluation->candidate_evaluation_input);
+            $this->totalQuestion =count($input->mcqs);
+
         }
 
         public function build()
