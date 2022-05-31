@@ -30,7 +30,7 @@ Route::get('/ar-markup',function (){
     return view('test-markup');
 });
 
-Route::get('/ar-import',[CController::class,'import'])->name('home');
+//Route::get('/ar-import',[CController::class,'import'])->name('home');
 
 Route::get('/',[CController::class,'index'])->name('home');
 

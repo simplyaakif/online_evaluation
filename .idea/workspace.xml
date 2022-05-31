@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_02_15_141201_add_weekly_column_to_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Course/Edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Course/Edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/LwPersonalInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/EvaluationResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/EvaluationResult.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/livewire.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/page-heading.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/page-heading.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/evaluation-notification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/course/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/course/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/lw-personal-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +322,7 @@
       <workItem from="1653722727538" duration="4446000" />
       <workItem from="1653894782611" duration="7755000" />
       <workItem from="1653997433207" duration="1839000" />
-      <workItem from="1654006573385" duration="1530000" />
+      <workItem from="1654006573385" duration="1862000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -563,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644815282697</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Email Updated">
+      <created>1654010459472</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1654010459472</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +557,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Updated Course Select Page and Routes" />
     <MESSAGE value="Course Select Done" />
     <MESSAGE value="Code 65" />
     <MESSAGE value="Code 66" />
@@ -597,6 +581,7 @@
     <MESSAGE value="Evaluation Error Settled" />
     <MESSAGE value="Evaluation Score Shown in Admin" />
     <MESSAGE value="Evaluation Candidate Link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Candidate Link" />
+    <MESSAGE value="Email Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email Updated" />
   </component>
 </project>
