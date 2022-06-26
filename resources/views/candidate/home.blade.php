@@ -164,7 +164,8 @@
                                         <span class="flex-1 flex">
         <span class="flex flex-col">
           <span id="project-type-1-label" class="block text-sm font-bold text-gray-900"> Rawalpindi </span>
-          <span id="project-type-1-description-0" class="mt-1 flex items-center text-sm text-gray-500"> Ace Institute Second Floor, Building B-6 Near Limelight Fifth Road Rawalpindi</span>
+          <span id="project-type-1-description-0" class="mt-1 flex items-center text-sm text-gray-500"> Ace Institute
+              Second Floor, Building B-6 Near Clock Tower Rehmanabad Rawalpindi</span>
             <span id="project-type-0-description-1" class="mt-6 text-sm font-medium text-gray-900">
                 <span class="flex items-center gap-4">
                 <x-icons.call/>

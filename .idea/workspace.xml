@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +327,7 @@
       <workItem from="1654006573385" duration="2372000" />
       <workItem from="1654069198812" duration="2580000" />
       <workItem from="1656165258824" duration="2048000" />
-      <workItem from="1656219723847" duration="1852000" />
+      <workItem from="1656219723847" duration="4311000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -567,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656221310777</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Campus in admin added">
+      <created>1656221607554</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1656221607554</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +583,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Code 66" />
     <MESSAGE value="Code 75 Done" />
     <MESSAGE value="Code 80 Done" />
     <MESSAGE value="Code 82 Done" />
@@ -601,6 +607,7 @@
     <MESSAGE value="Email Updated" />
     <MESSAGE value="Duplicate Route Commented" />
     <MESSAGE value="Address Added, Campus Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Address Added, Campus Added" />
+    <MESSAGE value="Campus in admin added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Campus in admin added" />
   </component>
 </project>
