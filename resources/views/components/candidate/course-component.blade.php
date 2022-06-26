@@ -48,8 +48,12 @@
                 </h3>
             </div>
             <div class="">
-                <span class="text-sm text-gray-600">Mode of Learning:</span>
+                <span class="text-sm text-gray-600">Mode of Learning</span>
                 <span class="font-semibold">{{$course->course_mode}}</span>
+            </div>
+            <div class="">
+                <span class="text-sm text-gray-600">Campus</span>
+                <span class="text-base  text-gray-600">{{$course->campus}}</span>
             </div>
         </div>
         <div class="block bg-indigo-600 text-white text-center ">

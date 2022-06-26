@@ -79,6 +79,16 @@
                             {{--            <option>Recorded Session</option>--}}
                         </select>
                     </div>
+                    <div>
+                        <label for="campus" class="block text-sm font-medium text-gray-700">Campus</label>
+                        <select wire:model="final.campus" id="campus" name="campus"
+                                class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none
+                                 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md" required>
+{{--                            <option value="">Select</option>--}}
+                            <option selected value="Islamabad">Islamabad</option>
+                            <option value="Rawalpindi">Rawalpindi</option>
+                        </select>
+                    </div>
 
                 </div>
             </div>
@@ -156,6 +166,16 @@
                                     {{$final['session_date']->start_date}}
                                 @else
                                     {{$final['session_date']['start_date']}}
+                                @endisset
+                            </h3>
+                        </div>
+                        <div>
+                            <h2 class="text-sm">Campus</h2>
+                            <h3 class="text-base  text-gray-600">
+                                @isset($final['campus'])
+                                    {{$final['campus']}}
+                                @else
+                                    {{$final['campus']}}
                                 @endisset
                             </h3>
                         </div>

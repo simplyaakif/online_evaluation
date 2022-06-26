@@ -22,6 +22,7 @@
         public $session_date;
         public $course_time;
         public $course_duration;
+        public $campus;
 
         public $currentCourse = null, $currentDuration = null;
 
@@ -34,6 +35,7 @@
                 'session_date'    => '',
                 'session_time'    => '',
                 'mode'            => 'Online',
+                'campus'=>'Islamabad',
             ];
 
 
@@ -64,6 +66,7 @@
             $this->final['course_duration'] = $this->course_durations->first();
             $this->final['session_date']    = $this->session_dates->first();
             $this->final['session_time']    = $this->course_times->first();
+//            $this->final['campus']    =         $this->campus;
         }
 
         public function updatingCourseDuration($value)
@@ -126,6 +129,7 @@
                 'course_mode' => $this->final['mode'],
                 'course_price' => $this->final['course_duration']['pivot']['price'],
                 'user_id' => Auth::user()->id,
+                'campus'=>$this->final['campus']
                                                        ]);
             $this->redirectRoute('candidate.evaluation');
 
