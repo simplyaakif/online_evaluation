@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Address Added">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_26_100959_add_campus_to_candidate_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/candidate/course-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/evaluation-result.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" afterDir="false" />
+    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/candidate/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +327,7 @@
       <workItem from="1654006573385" duration="2372000" />
       <workItem from="1654069198812" duration="2580000" />
       <workItem from="1656165258824" duration="2048000" />
-      <workItem from="1656219723847" duration="1490000" />
+      <workItem from="1656219723847" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -567,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654010782786</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Address Added, Campus Added">
+      <created>1656221310777</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1656221310777</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +576,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Code 65" />
     <MESSAGE value="Code 66" />
     <MESSAGE value="Code 75 Done" />
     <MESSAGE value="Code 80 Done" />
@@ -601,6 +600,7 @@
     <MESSAGE value="Evaluation Candidate Link" />
     <MESSAGE value="Email Updated" />
     <MESSAGE value="Duplicate Route Commented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Duplicate Route Commented" />
+    <MESSAGE value="Address Added, Campus Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Address Added, Campus Added" />
   </component>
 </project>

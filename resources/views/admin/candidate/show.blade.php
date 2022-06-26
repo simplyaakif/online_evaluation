@@ -162,6 +162,8 @@
                                     </li>
                                     <li>Course Price:{{$evaluation->course_price}}
                                     </li>
+                                    <li>Campus:{{$evaluation->campus}}
+                                    </li>
                                     <li>
                                         <hr></li>
                                     <li class="font-bold">Evaluation Score: {{$evaluation->candidate_evaluation_score}}</li>
