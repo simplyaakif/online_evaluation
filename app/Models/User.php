@@ -5,6 +5,7 @@
     use \DateTimeInterface;
     use App\Support\HasAdvancedFilter;
     use Carbon\Carbon;
+    use Filament\Models\Contracts\FilamentUser;
     use Hash;
     use Illuminate\Contracts\Auth\MustVerifyEmail;
     use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -13,7 +14,7 @@
     use Illuminate\Foundation\Auth\User as Authenticatable;
     use Illuminate\Notifications\Notifiable;
 
-    class User extends Authenticatable implements MustVerifyEmail {
+    class User extends Authenticatable implements MustVerifyEmail,FilamentUser {
 
         use HasFactory;
         use HasAdvancedFilter;
@@ -59,6 +60,11 @@
                 'updated_at',
                 'deleted_at',
             ];
+
+        public function canAccessFilament(): bool
+        {
+         return $this->is_admin == 1;
+        }
 
         public function avatarUrl()
         {

@@ -64,6 +64,13 @@ class Bill extends Model
         return $this->belongsTo(Candidate::class);
     }
 
+    public function candidate_course()
+    {
+        return $this->belongsTo(CandidateCourse::class);
+    }
+
+
+
     public function getDueDateAttribute($value)
     {
         return $value ? Carbon::parse($value)->format(config('project.date_format')) : null;

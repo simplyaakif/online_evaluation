@@ -11,6 +11,8 @@
         "php": "^8.0.2",
         "bugsnag/bugsnag-laravel": "^2.21",
         "doctrine/dbal": "^3.0",
+        "filament/filament": "^2.0",
+        "flowframe/laravel-trend": "^0.1.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/dusk": "^6.11",

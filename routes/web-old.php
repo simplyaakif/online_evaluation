@@ -24,16 +24,11 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Auth::routes(['register' => false, 'reset' => false]);
+Auth::routes();
 
 Route::get('/ar-markup',function (){
     return view('test-markup');
 });
-
-//Route::get('/logout',function (){
-//    return to_route('filament.auth.logout');
-//    //    return view('test-markup');
-//})->name('logout');
 
 //Route::get('/ar-import',[CController::class,'import'])->name('home');
 
@@ -66,7 +61,7 @@ Route::group(['prefix' => 'candidate','middleware' => ['auth']],function (){
 
 
 
-Route::group(['prefix' => 'admin-old', 'as' => 'admin.', 'middleware' => ['auth','is_admin']], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth','is_admin']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     // Permissions

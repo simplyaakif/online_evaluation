@@ -2,8 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/BillResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/BillResource/Pages/CreateBill.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/BillResource/Pages/EditBill.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/BillResource/Pages/ListBills.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource/Pages/CreateCandidateEvaluation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource/Pages/EditCandidateEvaluation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource/Pages/ListCandidateEvaluations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateResource/Pages/CreateCandidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateResource/Pages/EditCandidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateResource/Pages/ListCandidates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateResource/Pages/ViewCandidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CourseResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CourseResource/Pages/CreateCourse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CourseResource/Pages/EditCourse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/CourseResource/Pages/ListCourses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionDurationResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionDurationResource/Pages/CreateSessionDuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionDurationResource/Pages/EditSessionDuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionDurationResource/Pages/ListSessionDurations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionStartDateResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionStartDateResource/Pages/CreateSessionStartDate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionStartDateResource/Pages/EditSessionStartDate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionStartDateResource/Pages/ListSessionStartDates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionTimeResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionTimeResource/Pages/CreateSessionTime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionTimeResource/Pages/EditSessionTime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/SessionTimeResource/Pages/ListSessionTimes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/UserResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/UserResource/Pages/CreateUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/UserResource/Pages/EditUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Resources/UserResource/Pages/ListUsers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Widgets/CandidatesChart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Filament/Widgets/StatsOverview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/filament.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2022_08_08_010314_add_is_admin_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/web-old.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidate/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidate/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CandidateEvaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CandidateEvaluation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +226,21 @@
       <path value="$PROJECT_DIR$/vendor/spatie/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/spatie/ignition" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/vendor/danharrin/livewire-rate-limiting" />
+      <path value="$PROJECT_DIR$/vendor/danharrin/date-format-converter" />
+      <path value="$PROJECT_DIR$/vendor/tgalopin/html-sanitizer" />
+      <path value="$PROJECT_DIR$/vendor/akaunting/laravel-money" />
+      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-heroicons" />
+      <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-icons" />
+      <path value="$PROJECT_DIR$/vendor/filament/filament" />
+      <path value="$PROJECT_DIR$/vendor/filament/tables" />
+      <path value="$PROJECT_DIR$/vendor/filament/support" />
+      <path value="$PROJECT_DIR$/vendor/filament/notifications" />
+      <path value="$PROJECT_DIR$/vendor/filament/forms" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-parser" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/flowframe/laravel-trend" />
     </include_path>
   </component>
   <component name="ProjectId" id="1uX0S8ZS2SrBdObrpsqUdFLiQaO" />
@@ -190,9 +254,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Aakif Work/Systems Developments/evaluation-online/routes&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -200,6 +266,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Aakif Work\Systems Developments\evaluation-online\routes" />
       <recent name="E:\Aakif Work\Systems Developments\online-evaluation\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -331,7 +398,10 @@
       <workItem from="1656219723847" duration="4983000" />
       <workItem from="1656315731600" duration="902000" />
       <workItem from="1658674221962" duration="748000" />
-      <workItem from="1659260349482" duration="344000" />
+      <workItem from="1659260349482" duration="539000" />
+      <workItem from="1659878662153" duration="4672000" />
+      <workItem from="1659894115753" duration="13295000" />
+      <workItem from="1659945151857" duration="2947000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -592,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656316199911</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Evaluation Result Email Updated - Removed Summer Package Reference">
+      <created>1659260790283</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1659260790283</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +678,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Code 80 Done" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Code 82 Done" />
     <MESSAGE value="Code 84 Done" />
     <MESSAGE value="Code 86 Done" />
@@ -626,6 +703,7 @@
     <MESSAGE value="Address Added, Campus Added" />
     <MESSAGE value="Campus in admin added" />
     <MESSAGE value="Campus address changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Campus address changed" />
+    <MESSAGE value="Evaluation Result Email Updated - Removed Summer Package Reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Result Email Updated - Removed Summer Package Reference" />
   </component>
 </project>

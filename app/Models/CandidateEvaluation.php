@@ -14,4 +14,16 @@
         {
             return $this->belongsTo(CandidateCourse::class,'candidate_course_id');
         }
+
+        public function candidate()
+        {
+            return $this->hasMany(Candidate::class);
+        }
+
+        public function user()
+        {
+            return $this->belongsTo(User::class);
+        }
+
+
     }
