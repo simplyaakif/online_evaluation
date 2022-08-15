@@ -5,7 +5,7 @@
     use App\Mail\NewRegistraiton;
     use App\Models\Candidate;
     use App\Models\User;
-    use Auth;
+    use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Mail;
     use Livewire\Component;
 
@@ -41,7 +41,7 @@
                                                'user_account_id' => $user->id
                                            ]);
             $user->roles()->sync([2]);
-            Auth::login($user);
+            Auth::login($user,true);
             Mail::to($user->email)->queue (new NewRegistraiton($user));
             $this->name = $this->email = $this->mobile = $this->password = $this->password_confirmation = '';
 

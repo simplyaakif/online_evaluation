@@ -19,6 +19,10 @@ class Candidate extends Model implements HasMedia
     use SoftDeletes;
     use InteractsWithMedia;
 
+    protected $casts=[
+        'dob' => 'date:Y-m-d',
+    ];
+
     public const GENDER_RADIO = [
         'male'   => 'Male',
         'female' => 'Female',
@@ -90,7 +94,7 @@ class Candidate extends Model implements HasMedia
 
     public function courses()
     {
-        
+
     }
     public function registerMediaConversions(Media $media = null): void
     {
