@@ -2,29 +2,30 @@
 
 namespace App\Filament\Widgets;
 
-use App\Models\Candidate;
+use App\Models\CandidateEvaluation;
 use Filament\Widgets\LineChartWidget;
 use Flowframe\Trend\Trend;
 use Flowframe\Trend\TrendValue;
 
-class CandidatesChart extends LineChartWidget
+class MonthlyCandidateEvaluationChart extends LineChartWidget
 {
-    protected static ?string $heading = 'Daily Candidates';
-    protected static ?int $sort = 3;
+    protected static ?string $heading = 'Monthly Evaluations';
+    protected static ?int $sort = 6;
+
     protected function getData(): array
     {
-        $data = Trend::model(Candidate::class)
+        $data = Trend::model(CandidateEvaluation::class)
             ->between(
-                start: now()->startOfMonth(),
-                end: now()->endOfMonth(),
+                start: now()->startOfYear(),
+                end: now()->endOfYear(),
             )
-            ->perDay()
+            ->perMonth()
             ->count();
 
         return [
             'datasets' => [
                 [
-                    'label' => 'Daily Candidates',
+                    'label' => 'Monthly Evaluations',
                     'data' => $data->map(fn (TrendValue $value) => $value->aggregate),
                 ],
             ],

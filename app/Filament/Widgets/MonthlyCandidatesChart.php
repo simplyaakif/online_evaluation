@@ -9,7 +9,7 @@ use Flowframe\Trend\TrendValue;
 
 class MonthlyCandidatesChart extends LineChartWidget
 {
-    protected static ?string $heading = 'Monthly Candidate Chart';
+    protected static ?string $heading = 'Monthly Candidates';
     protected static ?int $sort = 4;
 
     protected function getData(): array

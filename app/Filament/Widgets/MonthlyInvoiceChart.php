@@ -11,7 +11,7 @@ use Flowframe\Trend\TrendValue;
 class MonthlyInvoiceChart extends LineChartWidget
 {
     protected static ?string $heading = 'Monthly Invoices';
-    protected static ?int $sort = 6;
+    protected static ?int $sort = 8;
     protected function getData(): array
     {
         $data = Trend::model(Bill::class)

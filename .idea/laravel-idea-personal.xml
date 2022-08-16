@@ -5,7 +5,6 @@
       <map>
         <entry key="createDatabaseMigration.create" value="" />
         <entry key="createMailable.markdown" value="1" />
-        <entry key="createModel.createMigration" value="1" />
       </map>
     </option>
   </component>

@@ -24,6 +24,8 @@ class BillResource extends Resource
 
     protected static ?string $navigationGroup = 'Invoice';
 
+    protected static ?string $navigationLabel = 'Invoices';
+
     public static function form(Form $form): Form
     {
         return $form

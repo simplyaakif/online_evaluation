@@ -4,6 +4,7 @@
 
     use App\Models\Bill;
     use App\Models\Candidate;
+    use App\Models\CandidateEvaluation;
     use Filament\Widgets\StatsOverviewWidget as BaseWidget;
     use Filament\Widgets\StatsOverviewWidget\Card;
 
@@ -21,6 +22,19 @@
                     now()->subMonth()->startOfMonth()->toDateString(),
                     now()->subMonth()->endOfMonth()->toDateString(),
                 ])->count()),
+
+                Card::make('Daily Evaluations', CandidateEvaluation::whereDate('created_at', now()->toDateString())
+                    ->count()),
+                Card::make('Monthly Evaluations', CandidateEvaluation::whereBetween('created_at', [
+                    now()->startOfMonth()->toDateString(),
+                    now()->endOfMonth()->toDateString(),
+                ])->count()),
+                Card::make('Previous Month Evaluations', CandidateEvaluation::whereBetween('created_at', [
+                    now()->subMonth()->startOfMonth()->toDateString(),
+                    now()->subMonth()->endOfMonth()->toDateString(),
+                ])->count()),
+
+
 
                 Card::make('Daily Invoices', Bill::whereDate('created_at', now()->toDateString())->count()),
                 Card::make('Monthly Invoices', Bill::whereBetween('created_at', [

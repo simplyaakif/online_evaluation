@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/BillResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/BillResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Filament/Widgets/StatsOverview.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Widgets/StatsOverview.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +214,11 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/Aakif Work/Systems Developments/evaluation-online/routes&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
@@ -359,7 +368,8 @@
       <workItem from="1660289824214" duration="2968000" />
       <workItem from="1660306750890" duration="598000" />
       <workItem from="1660554523493" duration="6285000" />
-      <workItem from="1660571683223" duration="366000" />
+      <workItem from="1660571683223" duration="1787000" />
+      <workItem from="1660647293445" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -641,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660559701153</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Evaluation Score Update">
+      <created>1660572279403</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1660572279403</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +679,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Code 86 Done" />
     <MESSAGE value="Code 88 Done" />
     <MESSAGE value="Code 89 Done" />
     <MESSAGE value="Code 90 Done" />
@@ -687,6 +703,7 @@
     <MESSAGE value="Evaluation Result Email Updated - Removed Summer Package Reference" />
     <MESSAGE value="Evaluation Updated to Filament Admin Panel" />
     <MESSAGE value="Email Updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Email Updated." />
+    <MESSAGE value="Evaluation Score Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluation Score Update" />
   </component>
 </project>
