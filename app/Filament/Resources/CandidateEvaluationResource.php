@@ -41,11 +41,11 @@ class CandidateEvaluationResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')->searchable(),
-                Tables\Columns\TextColumn::make('user.candidate.mobile'),
+                Tables\Columns\TextColumn::make('user.candidate.mobile')->label('mobile'),
                 Tables\Columns\TextColumn::make('course.course_name'),
                 Tables\Columns\TextColumn::make('candidate_evaluation_score')->label('Score'),
-                Tables\Columns\TextColumn::make('course.course_mode')->searchable(),
-                Tables\Columns\TextColumn::make('course.campus')->searchable(),
+                Tables\Columns\TextColumn::make('course.course_mode')->searchable()->label('Mode of Learning'),
+                Tables\Columns\TextColumn::make('course.campus')->searchable()->label('campus'),
                 Tables\Columns\TextColumn::make('created_at')->sortable()
                     ->dateTime('h:i A d-M-Y'),
             ])->defaultSort('created_at','desc')
