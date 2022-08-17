@@ -42,7 +42,7 @@ class CandidateEvaluationResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')->searchable(),
                 Tables\Columns\TextColumn::make('user.candidate.mobile')->label('Mobile'),
-                Tables\Columns\TextColumn::make('course.course_name'),
+                Tables\Columns\TextColumn::make('course.course_name')->searchable(),
                 Tables\Columns\TextColumn::make('candidate_evaluation_score')->label('Score'),
                 Tables\Columns\TextColumn::make('course.course_mode')->searchable()->label('Mode of Learning'),
                 Tables\Columns\TextColumn::make('course.campus')->searchable()->label('Campus'),
