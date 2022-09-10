@@ -70,11 +70,11 @@
                     </div>
                     <div>
                         <label for="learning_mode" class="block text-sm font-medium text-gray-700">Mode of
-                            Learning</label>
+                            Classes</label>
                         <select wire:model="final.mode" id="learning_mode" name="learning_mode"
                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                             <option value="Regular On Campus">Regular On Campus</option>
-                            <option selected value="Online">Online</option>
+                            <option selected value="Online">Online - Live Session</option>
                             <option value="Weekend Session">Weekend Session</option>
                             {{--            <option>Recorded Session</option>--}}
                         </select>

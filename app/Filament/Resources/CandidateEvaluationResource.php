@@ -5,12 +5,14 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\CandidateEvaluationResource\Pages;
 use App\Filament\Resources\CandidateEvaluationResource\RelationManagers;
 use App\Models\CandidateEvaluation;
+use App\Models\Course;
 use Filament\Forms;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Filters\Layout;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -40,6 +42,7 @@ class CandidateEvaluationResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('id'),
                 Tables\Columns\TextColumn::make('user.name')->searchable(),
                 Tables\Columns\TextColumn::make('user.candidate.mobile')->label('Mobile'),
                 Tables\Columns\TextColumn::make('course.course_name')->searchable(),
@@ -49,8 +52,20 @@ class CandidateEvaluationResource extends Resource
                 Tables\Columns\TextColumn::make('created_at')->sortable()
                     ->dateTime('h:i A d-M-Y'),
             ])->defaultSort('created_at','desc')
+
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('course_mode')
+                    ->relationship('course','course_mode')
+                ->options(Course::MODE),
+                Tables\Filters\SelectFilter::make('campus')
+                    ->relationship('course','campus')
+                ->options([
+                    'Rawalpindi'=>'Rawalpindi',
+                    'Islamabad'=>'Islamabad',
+                          ]),
+                Tables\Filters\SelectFilter::make('course_name')
+                    ->relationship('course','course_name')
+                ->options(Course::all()->pluck('title','id')),
             ])
             ->actions([
 //                Tables\Actions\ViewAction::make(),
@@ -66,6 +81,8 @@ class CandidateEvaluationResource extends Resource
             //
         ];
     }
+
+
 
     public static function getPages(): array
     {

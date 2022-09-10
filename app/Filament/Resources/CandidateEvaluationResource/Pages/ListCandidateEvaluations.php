@@ -5,6 +5,7 @@ namespace App\Filament\Resources\CandidateEvaluationResource\Pages;
 use App\Filament\Resources\CandidateEvaluationResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Filters\Layout;
 
 class ListCandidateEvaluations extends ListRecords
 {
@@ -15,5 +16,9 @@ class ListCandidateEvaluations extends ListRecords
         return [
             Actions\CreateAction::make(),
         ];
+    }
+    protected function getTableFiltersLayout(): ?string
+    {
+        return Layout::AboveContent;
     }
 }

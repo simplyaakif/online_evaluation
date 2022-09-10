@@ -39,6 +39,12 @@ class Course extends Model
         'deleted_at',
     ];
 
+    public const MODE =[
+      'Regular On Campus'=>'Regular On Campus',
+      'Online'=>'Online',
+      'Weekend Session'=>'Weekend Session'
+    ];
+
     public function sessionDurations()
     {
         return $this->belongsToMany(SessionDuration::class)->withPivot('price');
