@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource/Pages/ListCandidateEvaluations.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/CandidateEvaluationResource/Pages/ListCandidateEvaluations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/CourseResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/CourseResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SessionStartDate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SessionStartDate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +373,9 @@
       <workItem from="1660747425683" duration="547000" />
       <workItem from="1660921538489" duration="1806000" />
       <workItem from="1661852039897" duration="82000" />
-      <workItem from="1662806015614" duration="390000" />
+      <workItem from="1662806015614" duration="1011000" />
+      <workItem from="1663585711361" duration="349000" />
+      <workItem from="1663586329505" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="60 Percent Done">
       <created>1625386181433</created>
@@ -698,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660747618302</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Ids Added">
+      <created>1662806423842</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1662806423842</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -719,7 +727,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Code 90.5 Done" />
     <MESSAGE value="Code 91 Done" />
     <MESSAGE value="Code 91.5 Done" />
     <MESSAGE value="Code 92 Done" />
@@ -744,6 +751,7 @@
     <MESSAGE value="Evaluation Chart Also Added" />
     <MESSAGE value="labels fixed" />
     <MESSAGE value="Searchable Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searchable Added" />
+    <MESSAGE value="Ids Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ids Added" />
   </component>
 </project>

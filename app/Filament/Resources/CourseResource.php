@@ -37,17 +37,18 @@
 
                                      MultiSelect::make('session_time')->relationship('sessionTime', 'time')->columnSpan(6),
                                      MultiSelect::make('start_date')->relationship('sessionStartDate', 'start_date')->columnSpan(6),
-//                                     Repeater::make('Session')
-//                                         ->relationship('sessionDurations')
+                                     Toggle::make('is_weekly'),
+//                                     Repeater::make('sessionDurations')
+//                                         ->relationship()
 //                                         ->schema([
 //
-//       Select::make('session_duration_id')->label('Session Duration')
+//       Select::make('session_duration')->label('Session Duration')
 //           ->options(SessionDuration::all()->pluck('session_duration','id'))
 //           ->required()
 //           ->columnSpan(6),
-//       TextInput::make('price')->columnSpan(6)->required()
+//       TextInput::make('price')
+//           ->columnSpan(6)->required()
 //                                                                       ])->minItems(1)->columns(12)->columnSpan(12),
-                                     Toggle::make('is_weekly'),
                                  ])->columns(12);
         }
 
@@ -60,6 +61,7 @@
                                        TextColumn::make('sessionDuration.session_duration'),
                                        TextColumn::make('sessionStartDate.start_date'),
                                        TextColumn::make('created_at')->dateTime(),
+
                                    ])->filters([//
                                                ])->actions([
                                                                Tables\Actions\EditAction::make(),
