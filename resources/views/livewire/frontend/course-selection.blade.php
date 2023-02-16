@@ -6,6 +6,13 @@
                 <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Select Course & Proceed Further
                 </h3>
+                <div class="text-sm text-gray-800">On next screen you will be given an evaluation test. Kindly fill
+                    it to the
+                    best of your knowledge. Its not entry test but an assessment. The more accurately you give it, the
+                    more we can customize your course for you. Kindly
+                    check your email after
+                    submitting evaluation test.(Check SPAM also)
+                </div>
             </div>
             <div class="px-4 py-5 sm:p-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

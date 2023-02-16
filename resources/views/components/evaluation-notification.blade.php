@@ -14,7 +14,11 @@
                     <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
                         <fieldset>
                             <legend class="text-base font-medium text-gray-900">Proceed Forward. Click Save</legend>
-{{--                            <div class="mt-4 space-y-4">--}}
+                            <div class="text-sm my-4">Kindly check your email after submitting evaluation test.(Check
+                                SPAM also). Click Once and wait till system generate result.
+                            </div>
+
+                            {{--                            <div class="mt-4 space-y-4">--}}
 {{--                                <div class="flex items-start">--}}
 {{--                                    <div class="flex items-center h-5">--}}
 {{--                                        <input id="comments" name="comments" checked="checked" disabled type="checkbox"--}}

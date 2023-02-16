@@ -37,6 +37,8 @@
     @else
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div>
+                <div class="text-center my-4">Kindly check your email after submitting evaluation test.(Check SPAM also)
+                </div>
                 <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     @foreach($courses as $course)
                         <li>
