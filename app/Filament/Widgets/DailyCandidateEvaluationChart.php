@@ -15,7 +15,7 @@ class DailyCandidateEvaluationChart extends LineChartWidget
     {
         $data = Trend::model(CandidateEvaluation::class)
             ->between(
-                start: now()->startOfMonth(),
+                start: now()->subMonths(12)->startOfMonth(),
                 end: now()->endOfMonth(),
             )
             ->perDay()
