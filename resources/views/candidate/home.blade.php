@@ -1,16 +1,18 @@
 <x-layouts.main title="Candidate Evaluation">
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div x-data="{menu:false}" class="relative bg-white overflow-hidden">
+    <div x-data="{menu:false}" class="relative md:flex bg-white overflow-hidden items-center">
         <div class="max-w-7xl mx-auto">
             <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                    <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
+                {{--                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"--}}
+                {{--                     fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">--}}
+                {{--                    <polygon points="50,0 100,0 50,100 0,100"/>--}}
+                {{--                </svg>--}}
 
                 <div>
                     <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-                        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                             aria-label="Global">
                             <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                                 <div class="flex items-center justify-between w-full md:w-auto">
                                     <a href="#">
@@ -20,11 +22,14 @@
                                     <div class="-mr-2 flex items-center md:hidden">
                                         <button @click="{menu=true}" type="button" class="bg-white rounded-md p-2
                                         inline-flex
-                                        items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                                        items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                                aria-expanded="false">
                                             <span class="sr-only">Open main menu</span>
                                             <!-- Heroicon name: outline/menu -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M4 6h16M4 12h16M4 18h16"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -64,8 +69,10 @@
                                     items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                                         <span class="sr-only">Close main menu</span>
                                         <!-- Heroicon name: outline/x -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M6 18L18 6M6 6l12 12"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -76,7 +83,6 @@
 
                                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700
                                 hover:text-gray-900 hover:bg-gray-50">Instructions</a>
-
 
                             </div>
                             <a href="{{asset('login')}}" class="block w-full px-5 py-3 text-center font-medium
@@ -117,19 +123,36 @@
                             </div>
                         </div>
 
-                        <hr class="mb-4 mt-8 block">
-                            <!-- This example requires Tailwind CSS v2.0+ -->
-                            <fieldset>
-                                <legend class="text-2xl font-bold text-indigo-600">Our Campuses</legend>
+                        <!-- This example requires Tailwind CSS v2.0+ -->
 
-                                <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                                    <!--
-                                      Checked: "border-transparent", Not Checked: "border-gray-300"
-                                      Active: "border-indigo-500 ring-2 ring-indigo-500"
-                                    -->
-                                    <label class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
-{{--                                        <input type="radio" name="project-type" value="Newsletter" class="sr-only" aria-labelledby="project-type-0-label" aria-describedby="project-type-0-description-0 project-type-0-description-1">--}}
-                                        <span class="flex-1 flex">
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class=" lg:inset-y-0 lg:right-0 lg:w-1/2">
+            {{--        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">--}}
+            {{--            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">--}}
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-LkQfd5JoGM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            {{--            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{{asset('img/exams.png')}}" alt="">--}}
+        </div>
+    </div>
+    <hr class="mb-4 mt-8 block">
+    <div class="max-w-7xl mx-auto">
+        <fieldset>
+            <legend class="text-2xl font-bold text-indigo-600 mt-8">Our Campuses</legend>
+
+            <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                <!--
+                  Checked: "border-transparent", Not Checked: "border-gray-300"
+                  Active: "border-indigo-500 ring-2 ring-indigo-500"
+                -->
+                <label
+                    class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
+                    {{--                                        <input type="radio" name="project-type" value="Newsletter" class="sr-only" aria-labelledby="project-type-0-label" aria-describedby="project-type-0-description-0 project-type-0-description-1">--}}
+                    <span class="flex-1 flex">
         <span class="flex flex-col">
           <span id="project-type-0-label" class="block text-sm font-bold text-gray-900"> Islamabad </span>
           <span id="project-type-0-description-0" class="mt-1 flex items-center text-sm text-gray-500">Ace Institute Second Floor, Above Passport Office G-10 Markaz Islamabad</span>
@@ -141,26 +164,31 @@
             </span>
         </span>
       </span>
-                                        <!--
-                                          Not Checked: "invisible"
+                    <!--
+                      Not Checked: "invisible"
 
-                                          Heroicon name: solid/check-circle
-                                        -->
-                                        <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                        </svg>
-                                        <!--
-                                          Active: "border", Not Active: "border-2"
-                                          Checked: "border-indigo-500", Not Checked: "border-transparent"
-                                        -->
-                                        <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-                                    </label>
+                      Heroicon name: solid/check-circle
+                    -->
+                    <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="absolute -inset-px rounded-lg border-2 pointer-events-none"
+                          aria-hidden="true"></span>
+                </label>
 
-                                    <!--
-                                      Checked: "border-transparent", Not Checked: "border-gray-300"
-                                      Active: "border-indigo-500 ring-2 ring-indigo-500"
-                                    -->
-                                    <label class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
+                <!--
+                  Checked: "border-transparent", Not Checked: "border-gray-300"
+                  Active: "border-indigo-500 ring-2 ring-indigo-500"
+                -->
+                <label
+                    class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
                                         <span class="flex-1 flex">
         <span class="flex flex-col">
           <span id="project-type-1-label" class="block text-sm font-bold text-gray-900"> Rawalpindi </span>
@@ -173,37 +201,37 @@
             </span>
         </span>
       </span>
-                                        <!--
-                                          Not Checked: "invisible"
+                    <!--
+                      Not Checked: "invisible"
 
-                                          Heroicon name: solid/check-circle
-                                        -->
-                                        <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                        </svg>
-                                        <!--
-                                          Active: "border", Not Active: "border-2"
-                                          Checked: "border-indigo-500", Not Checked: "border-transparent"
-                                        -->
-                                        <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-                                    </label>
-                                </div>
-                            </fieldset>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1479.6614873920253!2d73
+                      Heroicon name: solid/check-circle
+                    -->
+                    <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="absolute -inset-px rounded-lg border-2 pointer-events-none"
+                          aria-hidden="true"></span>
+                </label>
+            </div>
+        </fieldset>
+        <div class="md:flex gap-4">
+            <iframe class="mt-8" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3320.3184957800813!2d73.01328424194429!3d33.67481631450936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbe1f7af4800b%3A0x12ea257b525b3432!2sACE%20American%20Institute%20of%20English!5e0!3m2!1sen!2s!4v1681681086873!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe class="mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1479.6614873920253!2d73
                         .07281921931629!3d33.6382998213405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
                         .1!3m3!1m2!1s0x38df9569a554ef19%3A0x307d4394690ff887!2sAmerican%20Center%20of%20English!5e0
                         !3m2!1sen!2s!4v1658674799238!5m2!1sen!2s" width="100%" height="450" style="border:0;z-index:
                         999"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </main>
-            </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-{{--            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">--}}
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{{asset('img/exams.png')}}" alt="">
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-
 
 </x-layouts.main>
