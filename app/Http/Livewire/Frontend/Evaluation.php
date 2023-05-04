@@ -47,6 +47,10 @@
 
         public function dumpResult()
         {
+//            dd(
+//            Auth::user()->candidate->mobile
+//
+//            );
             $score = 0;
             foreach($this->input['mcqs'] as $mcq) {
                 $answer = json_decode($mcq['selected']);
@@ -62,9 +66,47 @@
                                                                     'candidate_evaluation_score' => $score
                                                                 ]);
 
+            $this->sendWhatsapp($candidate_evaluation);
             Mail::to(Auth::user()->email)->send(new EvaluationResult($candidate_evaluation));
 
             $this->redirectRoute('candidate.personal');
+        }
+
+        public function sendWhatsapp($candidateEvaluation)
+        {
+            $url = "http://mywhatsapp.pk/api/send.php";
+
+            $name = Auth::user()->name;
+            $score = $candidateEvaluation->candidate_evaluation_score;
+            $message = "*Hi {$name}*
+We have received your evaluation for the applied course.
+You scored *{$score}* for the Evaluation.  You are requested to visit our campus for further formalities related to the reservation of seat. You can avail one free trial class. Kindly check your email for further details.
+Or contact at 0333-5335792 for more information.";
+
+            $parameters = array("api_key" => "923335335792-2408f945-a42c-4c1a-99c4-1ca59ffa8fa9",
+                                "mobile" => Auth::user()->candidate->mobile,
+                                "message" => $message,
+                                "priority" => "10",
+                                "type" => 0
+            );
+
+            $ch = curl_init();
+            $timeout  =  30;
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,  2);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $parameters);
+            curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
+            $response = curl_exec($ch);
+            curl_close($ch);
+
+            echo $response ;
+
+//            dd($response);
+
         }
 
         public function close()
