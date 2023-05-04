@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Disabled added">
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Score out of added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/Evaluation.php" afterDir="false" />
     </list>
@@ -397,28 +394,7 @@
       <workItem from="1681814474946" duration="1590000" />
       <workItem from="1683051757194" duration="16000" />
       <workItem from="1683114089252" duration="1759000" />
-      <workItem from="1683183101514" duration="1264000" />
-    </task>
-    <task id="LOCAL-00003" summary="Test">
-      <created>1625488415497</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1625488415497</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated Course Select Page">
-      <created>1625553530764</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1625553530764</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated Course Select Page and Routes">
-      <created>1625575771978</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1625575771978</updated>
+      <workItem from="1683183101514" duration="2092000" />
     </task>
     <task id="LOCAL-00006" summary="Course Select Done">
       <created>1625669336481</created>
@@ -742,7 +718,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681681249604</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Added Whatsapp sms to evaluation score.">
+      <created>1683184399232</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1683184399232</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Line Fixed">
+      <created>1683184490594</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1683184490594</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Score out of added">
+      <created>1683184688549</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1683184688549</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -763,9 +760,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Code 92 Done" />
-    <MESSAGE value="Code 93 Done" />
-    <MESSAGE value="Code 93.5 Done" />
     <MESSAGE value="Code 93.6 Done" />
     <MESSAGE value="Fee Added" />
     <MESSAGE value="Candidate Invoice Added" />
@@ -788,6 +782,9 @@
     <MESSAGE value="Ids Added" />
     <MESSAGE value="Disabled added" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Added Whatsapp sms to evaluation score." />
+    <MESSAGE value="Line Fixed" />
+    <MESSAGE value="Score out of added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Score out of added" />
   </component>
 </project>

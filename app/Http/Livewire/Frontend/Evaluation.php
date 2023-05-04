@@ -8,6 +8,7 @@
     use App\Models\CandidateEvaluation;
     use App\Models\Question;
     use Illuminate\Support\Facades\Auth;
+    use Illuminate\Support\Facades\Log;
     use Illuminate\Support\Facades\Mail;
     use Livewire\Component;
     use function PHPUnit\Framework\countOf;
@@ -107,7 +108,7 @@ Or contact at 0333-5335792 for more information.";
             curl_close($ch);
 
 //            echo $response ;
-
+                Log::info($response);
 //            dd($response);
 
         }
