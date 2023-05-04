@@ -103,7 +103,7 @@ Or contact at 0333-5335792 for more information.";
             $response = curl_exec($ch);
             curl_close($ch);
 
-            echo $response ;
+//            echo $response ;
 
 //            dd($response);
 
