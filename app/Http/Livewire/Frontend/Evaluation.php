@@ -78,9 +78,12 @@
 
             $name = Auth::user()->name;
             $score = $candidateEvaluation->candidate_evaluation_score;
+            $input = json_decode($candidateEvaluation->candidate_evaluation_input);
+            $totalQuestion =count($input->mcqs);
+
             $message = "*Hi {$name}*
 We have received your evaluation for the applied course.
-You scored *{$score}* for the Evaluation.  You are requested to visit our campus for further formalities related to the reservation of seat. You can avail one free trial class. Kindly check your email for further details.
+You scored *{$score}/{$totalQuestion}* for the Evaluation.  You are requested to visit our campus for further formalities related to the reservation of seat. You can avail one free trial class. Kindly check your email for further details.
 Or contact at 0333-5335792 for more information.";
 
             $parameters = array("api_key" => "923335335792-2408f945-a42c-4c1a-99c4-1ca59ffa8fa9",
