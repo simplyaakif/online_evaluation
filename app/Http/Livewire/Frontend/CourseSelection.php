@@ -34,7 +34,7 @@
                 'course_duration' => '',
                 'session_date'    => '',
                 'session_time'    => '',
-                'mode'            => 'Online',
+                'mode'            => 'Regular On Campus',
                 'campus'=>'Islamabad',
             ];
 
