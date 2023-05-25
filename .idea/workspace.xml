@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,14 +396,7 @@
       <workItem from="1683183101514" duration="2700000" />
       <workItem from="1683313867616" duration="9000" />
       <workItem from="1683383956343" duration="605000" />
-      <workItem from="1684999005752" duration="442000" />
-    </task>
-    <task id="LOCAL-00007" summary="Code 65">
-      <created>1626091882662</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1626091882663</updated>
+      <workItem from="1684999005752" duration="1901000" />
     </task>
     <task id="LOCAL-00008" summary="Code 66">
       <created>1626092338058</created>
@@ -742,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683204781833</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Course Mode Updated">
+      <created>1685007406047</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1685007406048</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -763,7 +762,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fee Added" />
     <MESSAGE value="Candidate Invoice Added" />
     <MESSAGE value="Composer setup" />
     <MESSAGE value="Evaluation Error Settled" />
@@ -788,6 +786,7 @@
     <MESSAGE value="Line Fixed" />
     <MESSAGE value="Score out of added" />
     <MESSAGE value="Log added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log added" />
+    <MESSAGE value="Course Mode Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course Mode Updated" />
   </component>
 </project>

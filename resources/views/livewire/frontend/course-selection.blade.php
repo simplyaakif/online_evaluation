@@ -80,9 +80,9 @@
                             Classes</label>
                         <select required wire:model="final.mode" id="learning_mode" name="learning_mode"
                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                            <option selected value="Regular On Campus">Regular On Campus</option>
-                            <option value="Online">Online - Live Session</option>
-                            <option value="Weekend Session">Weekend Session</option>
+                            <option selected value="Regular On Campus">Regular On Campus (Physical)</option>
+                            <option value="Online">Online - Live Session (Zoom)</option>
+                            <option value="Weekend Session">Weekend Session (Fri-Sat)</option>
                             {{--            <option>Recorded Session</option>--}}
                         </select>
                     </div>
