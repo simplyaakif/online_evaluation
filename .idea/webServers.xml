@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="17461024-f816-4b69-8a5d-de4cb7e9d4d4" name="Forge Tall Reef">
+        <fileTransfer accessType="SFTP" host="108.61.87.97" port="22" sshConfigId="0202d8ce-c199-4cfc-85d4-cd3543536b50" sshConfig="Forge Tall-reef" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
