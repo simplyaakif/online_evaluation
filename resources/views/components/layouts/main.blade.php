@@ -1,3 +1,4 @@
+@php use Carbon\Carbon; @endphp
 @props([
     'title'=>'Online Evaluation',
     'footer'=>true,
@@ -24,6 +25,16 @@
     <title>{{$title}}</title>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col justify-between">
+@php $show =  now() <= Carbon::parse('30 November 2023') @endphp
+@if($show)
+<div class="bg-black  py-2">
+    <div class="max-w-7xl mx-auto flex justify-between text-sm">
+        <strong>25% Off on all courses. Blessed Friday discount till 30th November</strong>
+        <div>Kindly visit website for actual new prices</div>
+    </div>
+</div>
+@endif
+
 <div>
 
     {{ $slot }}
@@ -34,18 +45,18 @@
         <x-layouts.footer/>
     </div>
 @endif
-    @livewireScripts
+@livewireScripts
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5ad847195f7cdf4f05330b1c/1fcgj6mee';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5ad847195f7cdf4f05330b1c/1fcgj6mee';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
 <!--End of Tawk.to Script-->
@@ -53,7 +64,6 @@
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{$scripts}}
-
 
 </body>
 </html>
