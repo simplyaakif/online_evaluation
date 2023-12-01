@@ -35,7 +35,7 @@
                         <select wire:model="course_duration" id="course_duration" name="course_duration"
                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                             @if($course_durations->count()==0)
-                                <option>Please Select Course</option>
+                                <option value="Select">Please Select Course</option>
                             @endif
                             @foreach($course_durations as $course_duration)
                                 <option value="{{$course_duration->id}}">{{$course_duration->session_duration}}</option>
@@ -142,6 +142,14 @@
                             <h2>Course Price</h2>
                             <h3 class="text-2xl font-semibold text-gray-600">
                                 {{$final['course_duration']->pivot->price}} Rs
+                            </h3>
+                        </div>
+                    @endisset
+                    @isset($final['course_duration']['pivot']['price'])
+                        <div class="px-4 py-3 sm:px-6 sm:py-2">
+                            <h2>Course Price</h2>
+                            <h3 class="text-2xl font-semibold text-gray-600">
+                                {{$final['course_duration']['pivot']['price']}} Rs
                             </h3>
                         </div>
                     @endisset

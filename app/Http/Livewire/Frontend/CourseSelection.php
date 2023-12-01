@@ -31,7 +31,7 @@
         public $final
             = [
                 'course'          => '',
-                'course_duration' => '',
+                'course_duration' => 'Select',
                 'session_date'    => '',
                 'session_time'    => '',
                 'mode'            => 'Regular On Campus',
@@ -88,10 +88,10 @@
 
         public function updatedCourseTime($value)
         {
+
             $time                        = SessionTime::findOrFail($value);
             $this->final['session_time'] = $time;
 //            $this->finalUpdate();
-//            dd($value,$this->final);
         }
 
         public function updatedSessionDate($value)
