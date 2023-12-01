@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<footer class="bg-white mt-24">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+<footer class="bg-white mt-24 py-12">
+    <div class="max-w-7xl mx-auto  px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div class="flex justify-center space-x-6 md:order-2">
             <a href="https://www.facebook.com/AmericanInstituteEnglish/" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Facebook</span>
@@ -22,6 +22,10 @@
             <p class="text-center text-base text-gray-400">
                 &copy; 2016 - {{Carbon\Carbon::now()->year}} ACE American Center of English, Inc. All rights reserved.
             </p>
+            <div class="text-xs text-gray-400">
+                Designed with ❣️ by <a target="_blank" href="https://aakifraza.com">Muhammad Aakif Raza</a>. Developed by <a target="_blank" href="https://appsoulz.com">AppSoulz</a>
+            </div>
         </div>
     </div>
+
 </footer>

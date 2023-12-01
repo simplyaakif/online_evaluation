@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Frontend/CourseSelection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/frontend/course-selection.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,21 +425,7 @@
       <workItem from="1700994728267" duration="3710000" />
       <workItem from="1701249610946" duration="202000" />
       <workItem from="1701249823707" duration="581000" />
-      <workItem from="1701450296670" duration="1121000" />
-    </task>
-    <task id="LOCAL-00012" summary="Code 82 Done">
-      <created>1627659204523</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1627659204523</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Code 84 Done">
-      <created>1627660697540</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1627660697540</updated>
+      <workItem from="1701450296670" duration="3636000" />
     </task>
     <task id="LOCAL-00014" summary="Code 86 Done">
       <created>1627758142151</created>
@@ -774,7 +756,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698404053989</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Updated The Issue of Course Selection">
+      <created>1701451460988</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1701451460988</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Price Issue Fixed">
+      <created>1701454070070</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1701454070070</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -795,8 +791,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Evaluation Score Shown in Admin" />
-    <MESSAGE value="Evaluation Candidate Link" />
     <MESSAGE value="Email Updated" />
     <MESSAGE value="Duplicate Route Commented" />
     <MESSAGE value="Address Added, Campus Added" />
@@ -820,6 +814,8 @@
     <MESSAGE value="Whatsapp message API key updated" />
     <MESSAGE value="Updated Dark Mode" />
     <MESSAGE value="Excel Export Enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Excel Export Enabled" />
+    <MESSAGE value="Updated The Issue of Course Selection" />
+    <MESSAGE value="Price Issue Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Price Issue Fixed" />
   </component>
 </project>
