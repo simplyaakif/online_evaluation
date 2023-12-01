@@ -144,8 +144,7 @@
                                 {{$final['course_duration']->pivot->price}} Rs
                             </h3>
                         </div>
-                    @endisset
-                    @isset($final['course_duration']['pivot']['price'])
+                    @else($final['course_duration']['pivot']['price'])
                         <div class="px-4 py-3 sm:px-6 sm:py-2">
                             <h2>Course Price</h2>
                             <h3 class="text-2xl font-semibold text-gray-600">
