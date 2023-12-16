@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="Updated">
+    <list default="true" id="6d8d07a4-a2fe-44a3-9340-e731dfbe7b59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/online-evaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-evaluation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,21 +426,9 @@
       <workItem from="1700994728267" duration="3710000" />
       <workItem from="1701249610946" duration="202000" />
       <workItem from="1701249823707" duration="581000" />
-      <workItem from="1701450296670" duration="3636000" />
-    </task>
-    <task id="LOCAL-00014" summary="Code 86 Done">
-      <created>1627758142151</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1627758142151</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Code 88 Done">
-      <created>1628349439962</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1628349439962</updated>
+      <workItem from="1701450296670" duration="4525000" />
+      <workItem from="1702723077671" duration="34000" />
+      <workItem from="1702723281699" duration="698000" />
     </task>
     <task id="LOCAL-00016" summary="Code 89 Done">
       <created>1628350474609</created>
@@ -770,7 +759,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701454070070</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Updated">
+      <created>1701454422165</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1701454422165</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Else added">
+      <created>1701454710752</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1701454710752</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +794,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Email Updated" />
     <MESSAGE value="Duplicate Route Commented" />
     <MESSAGE value="Address Added, Campus Added" />
     <MESSAGE value="Campus in admin added" />
@@ -805,7 +807,6 @@
     <MESSAGE value="Searchable Added" />
     <MESSAGE value="Ids Added" />
     <MESSAGE value="Disabled added" />
-    <MESSAGE value="Updated" />
     <MESSAGE value="Added Whatsapp sms to evaluation score." />
     <MESSAGE value="Line Fixed" />
     <MESSAGE value="Score out of added" />
@@ -816,6 +817,8 @@
     <MESSAGE value="Excel Export Enabled" />
     <MESSAGE value="Updated The Issue of Course Selection" />
     <MESSAGE value="Price Issue Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Price Issue Fixed" />
+    <MESSAGE value="Updated" />
+    <MESSAGE value="Else added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Else added" />
   </component>
 </project>

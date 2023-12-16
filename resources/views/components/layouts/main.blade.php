@@ -25,11 +25,11 @@
     <title>{{$title}}</title>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col justify-between">
-@php $show =  now() <= Carbon::parse('30 November 2023') @endphp
+@php $show =  now() <= Carbon::parse('31 December 2023') @endphp
 @if($show)
 <div class="bg-black  py-2">
     <div class="max-w-7xl mx-auto flex justify-between text-sm">
-        <strong>25% Off on all courses. Blessed Friday discount till 30th November</strong>
+        <strong>25% Off on all courses. Year End discount till 31st December</strong>
         <div>Kindly visit website for actual new prices</div>
     </div>
 </div>
