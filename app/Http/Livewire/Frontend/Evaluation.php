@@ -84,8 +84,8 @@
 
             $message = "*Hi {$name}*
 We have received your evaluation for the applied course.
-You scored *{$score}/{$totalQuestion}* for the Evaluation.  You are requested to visit our campus for further formalities related to the reservation of seat. You can avail one free trial class. Kindly check your email for further details.
-Or contact at 0333-5335792 for more information.";
+You scored *{$score}/{$totalQuestion}* for the Evaluation.  You are requested to visit our campus for further formalities related to the reservation of seat. You can avail one free trial class. Kindly check your email for further details. You will also receive a call or message with in 24 hours from staff.
+Alternatively you can contact us at 0333-5335792 for more information.";
 
             $parameters = array("api_key" => "923335335792-89800330-2738-44cd-9473-51c6bc9a6d87",
                                 "mobile" => Auth::user()->candidate->mobile,
