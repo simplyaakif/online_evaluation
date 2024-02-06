@@ -16,7 +16,7 @@ class MonthlyCandidatesChart extends LineChartWidget
     {
         $data = Trend::model(Candidate::class)
             ->between(
-                start: now()->subMonths(36)->startOfMonth(),
+                start: now()->subMonths(24)->startOfMonth(),
                 end: now()->endOfMonth(),
             )
             ->perMonth()
